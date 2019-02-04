@@ -18,7 +18,7 @@ header {
 	border: 1px solid #bbb;
 	box-shadow: 0 0 30px #777;
     text-align: center;
-    color: #f2f2f2;
+    color: #f2f2f2 !important;
 }
 
 header img, .headings {
