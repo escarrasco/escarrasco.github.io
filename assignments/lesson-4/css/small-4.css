@@ -65,9 +65,7 @@ h2{
 
 
 #menu a:hover:not(.active){
-    background-color: #0C486F;
-    color: #f2f2f2;
-
+    background-color: #0C486F !important;
 }
  
 
