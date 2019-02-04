@@ -62,8 +62,8 @@ h2{
     color: #f2f2f2;
 
   }
-
-#menu li a:not(.active){
+  
+#menu a:not(.active){
     background-color: #0C486F !important;
 }
  
