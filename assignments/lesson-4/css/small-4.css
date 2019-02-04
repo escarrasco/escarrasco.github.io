@@ -1,5 +1,6 @@
 body {
-	background-color: #bbb;
+    background-color: #bbb;
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -7,7 +8,8 @@ header {
 	background-color: #fff;
 	border: 1px solid #bbb;
 	box-shadow: 0 0 30px #777;
-	text-align: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 header img, .headings {
