@@ -116,7 +116,7 @@ h2{
 .weather-summary img{
     width: 100%;
 }
-.weather-block{
+.weather-summary div{
     width: 50%;
     background-color: #112B48;
     margin: 20px; 
