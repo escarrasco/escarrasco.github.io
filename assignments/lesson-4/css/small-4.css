@@ -90,13 +90,13 @@ h2{
  .mapouter{
      text-align:right;
      height:500px;
-     width:auto;
+     width:100%;
     }
 .gmap_canvas {
     overflow:hidden;
     background:none!important;
     height:500px;
-    width:auto;
+    width:100%;
 }
 
 .contact-info{
@@ -109,8 +109,7 @@ h2{
     position: relative;
 }
 .weather-summary img{
-    width: 1570px;
-    height: 1046px;
+    width: 100%;
 }
 .weather-summary div{
     width: 50%;
@@ -129,5 +128,5 @@ article{
 
 }
 article img{
-    width: 700px;
+    width: 100%;
 }
