@@ -49,9 +49,12 @@ h2{
     font-family: 'Raleway' , sans-serif;
 }
 
-nav{
+nav ul{
     background-color: #B78F7C;
     color: #7b6a62;
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
 }
  nav .active{
     background-color: #112B48;
@@ -60,5 +63,9 @@ nav{
  footer{
      background-color: #23838E;
      color: #f2f2f2;
-     font-size: 14px;https://escarrasco.github.io/assignments/lesson-4/preston-4.html
+     font-size: 14px;
+     margin: 10px auto;
+     border: 1px solid #bbb;
+     box-shadow: 0 0 30px #777;
+     text-align: center;
  }
