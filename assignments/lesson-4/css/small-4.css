@@ -27,3 +27,22 @@ header img, .headings {
 	vertical-align: middle;
 	margin: 10px;
 }
+
+header h1{
+    text-shadow: #c8dcf2;
+    font-size: 35px;
+}
+
+
+.motto{
+    font-style: italic;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Raleway' , sans-serif;
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Raleway' , sans-serif;
