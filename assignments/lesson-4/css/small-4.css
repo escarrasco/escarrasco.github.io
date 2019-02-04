@@ -47,18 +47,21 @@ h2{
     font-family: 'Raleway' , sans-serif;
 }
 
-nav{
+#menu{
     background-color: #B78F7C;
     color: #f2f2f2;
     list-style-type: none;
     text-align: center;
     margin: 0px;
     text-decoration: none;
+    padding-left: 0px;
 }
-.active{
+nav li a:hover:not(.active){
     background-color: #0C486F;
     color: #f2f2f2;
  }
+
+
  nav li:hover{
     background-color: #112B48; 
  }
