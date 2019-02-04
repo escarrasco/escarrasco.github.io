@@ -22,10 +22,14 @@ header {
     color: #f2f2f2;
 }
 
-header img, .headings {
+header img, .headings .motto {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 10px;
+}
+
+header img{
+    width: 100px;
 }
 
 header h1{
