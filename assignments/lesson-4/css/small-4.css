@@ -47,12 +47,13 @@ h2{
     font-family: 'Raleway' , sans-serif;
 }
 
-nav ul a{
+nav ul{
     background-color: #B78F7C;
-    color: #7b6a62;
+    color: #f2f2f2;
     list-style-type: none;
     text-align: center;
     margin: 0px;
+    text-decoration: none:
 }
  nav .active{
     background-color: #0C486F;
