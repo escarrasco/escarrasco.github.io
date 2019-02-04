@@ -108,15 +108,15 @@ h2{
     background-color: white;
     padding: 20px;
 }
-div.weather-summary{
+.weather-summary{
     background-color: white; 
     padding: 20px;
     position: relative;
 }
-div.weather-summary img{
+.weather-summary img{
     width: 100%;
 }
-div.weather-summary div{
+.weather-block{
     width: 50%;
     background-color: #112B48;
     margin: 20px; 
