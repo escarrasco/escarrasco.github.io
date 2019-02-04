@@ -32,6 +32,10 @@ header h1{
     color: #f2f2f2 !important;
 }
 
+header h2{
+    color: #f2f2f2;
+}
+
 .motto h2{
     font-style: italic;
     font-size: 15px !important;
