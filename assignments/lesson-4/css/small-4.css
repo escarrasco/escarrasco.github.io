@@ -106,8 +106,17 @@ h2{
 .weather-summary{
     background-color: white; 
     padding: 20px;
-
 }
+.weather-summary img{
+    width: 1570px;
+    height: 1046px;
+}
+.weather-summary div{
+    width: 50%;
+    background-color: #112B48;
+    margin: 20px; 
+}
+
 article{
     background-color: white;
     padding: 20px;
