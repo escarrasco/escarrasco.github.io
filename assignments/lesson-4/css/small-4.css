@@ -34,6 +34,8 @@ header h1{
 
 .motto{
     font-style: italic;
+    font-size: 15px !important;
+    margin: 0px !important;
 }
 
 h1{
@@ -52,17 +54,13 @@ h2{
     list-style-type: none;
     text-align: center;
     margin: 0px;
-    text-decoration: none;
+    text-decoration: none !important;
     padding-left: 0px;
 }
-#menu a:link, a:visited {
-    color: #f2f2f2;
-    text-decoration: none;
-  }
 
-li a:hover:not(.active){
+
+#menu a:hover:not(.active){
     background-color: #0C486F;
-    color: #f2f2f2;
  }
  
 
