@@ -98,3 +98,16 @@ h2{
     height:500px;
     width:auto;
 }
+
+.contact-info{
+    background-color: white;
+}
+.weather-summary{
+    background-color: white; 
+}
+article{
+    background-color: white;
+}
+article img{
+    width: 700px;
+}
