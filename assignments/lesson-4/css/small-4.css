@@ -8,7 +8,7 @@
   }
 
 body {
-    background-color: #bbb;
+    background-color:#7C7C7C;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -40,11 +40,14 @@ header h1{
 h1{
     font-size: 30px;
     font-family: 'Raleway' , sans-serif;
+    color: #0C486F;
+    text-align: center;
 }
 
 h2{
     font-size: 25px;
     font-family: 'Raleway' , sans-serif;
+    color: #B78F7C;
 }
 
 #menu{
@@ -83,3 +86,15 @@ h2{
      box-shadow: 0 0 30px #777;
      text-align: center;
  }
+
+ .mapouter{
+     text-align:right;
+     height:500px;
+     width:auto;
+    }
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:auto;
+}
