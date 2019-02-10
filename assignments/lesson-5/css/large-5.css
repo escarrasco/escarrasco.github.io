@@ -17,8 +17,9 @@
     
     #menu li {
         float: center;
-        border-right:1px solid #bbb;
+        border-right:1px solid #f2f2f2;
         display: inline;
+        padding: 10px auto;
     }
 
     #menu li.active{
@@ -40,7 +41,40 @@
         width: 5%;
     }
 
-    
+    .contact-info div{
+        display: inline-block;
+    }
+
+    .maprouter{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .gmap_canvas{
+        height: 300px;
+    }
+
+    article{
+        position: relative;
+        margin: 5%;
+    }
+    article img{
+        width: 20%;
+        margin: 5%; 
+        padding: 5%;
+        float: right;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        z-index: 1000;
+    }
+
+    nav{
+        text-align: center;
+        padding: 10px;
+        background-color: #B78F7C;
+    }
+
 }
 
 

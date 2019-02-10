@@ -108,7 +108,6 @@
     .contact-info{
         background-color: white;
         padding: 5%;
-        float: center;
     }
     .weather-summary{
         background-color: white; 
@@ -120,12 +119,12 @@
     }
     .weather-summary div{
         background-color: #112B48;
-        margin: 20px; 
-        padding: 20px;
+        margin: 5%; 
+        padding: 5%;
         float: left;
         position: absolute;
         left: 5%;
-        top: 20px;
+        top: 5%;
         z-index: 1000;
         color: #f2f2f2;
     }
@@ -135,6 +134,7 @@
         border: #B78F7f;
         border-style: solid;
         padding: 5%;
+        margin: 10% 5%;
     }
 
     article h2{
@@ -150,16 +150,27 @@
         text-align: center;
     }
 
+    .forecast h2{
+        color #0C486F;
+    }
     .forecast table{
-        border: #0C486F;
-        border-style: solid;
+        margin: auto;
     }
     .forecast th{
         background-color: #b3dbf7;
         color: #f2f2f2;
+        border: 1px solid #0C486F;
+        padding: 10px;
     }
-
+    .forecast td {
+        border: 1px solid #0C486F;
+        padding: 10px;
+      }
     .contact-info img{
         width: 15%;
     }
 
+    .contact-info div{
+        margin: auto;
+        padding: 5%;
+    }
