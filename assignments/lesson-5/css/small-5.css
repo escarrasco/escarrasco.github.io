@@ -2,10 +2,10 @@
     font-family: 'Raleway';
     src: url('https://fonts.googleapis.com/css?family=Raleway') ;
   }
-  @font-face {
+@font-face {
     font-family: 'Roboto Slab';
-    src: url('https://fonts.googleapis.com/css?family=Roboto-Slab') ;
-  }
+    src: url('https://fonts.googleapis.com/css?family=Roboto+Slab') ;
+ }
 
 body {
     background-color:white;
