@@ -42,7 +42,9 @@
     .contact-info h2, h4, p, img{
         padding: 0 5%;
     }
-
+    .contact-info img{
+        padding-left: 5%;
+    }
    div.info{
         display: inline-block;
         vertical-align: top;
