@@ -1,4 +1,4 @@
-
+@media screen and (max-width: 720px) {
     @font-face {
         font-family: 'Raleway';
         src: url('https://fonts.googleapis.com/css?family=Raleway') ;
@@ -148,3 +148,4 @@
         width: 15%;
     }
 
+}
