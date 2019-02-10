@@ -40,7 +40,7 @@
         width: 5%;
     }
 
-    .contact-info div{
+    .contact-info div.info{
         display: inline-block;
     }
 
