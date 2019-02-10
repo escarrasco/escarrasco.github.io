@@ -1,4 +1,7 @@
 @media screen and (min-width: 720px) {
+    .forecast{
+        display: block;
+    }
     #menu {
         list-style-type: none;
         padding: 0;
