@@ -107,34 +107,38 @@
 
     .contact-info{
         background-color: white;
-        padding: 20px;
+        padding: 5%;
         float: center;
     }
     .weather-summary{
         background-color: white; 
-        padding: 20px;
+        padding: 5%;
         position: relative;
     }
     .weather-summary img{
         width: 100%;
     }
     .weather-summary div{
-        width: 50%;
         background-color: #112B48;
         margin: 20px; 
         padding: 20px;
         float: left;
         position: absolute;
-        left: 20px;
+        left: 5%;
         top: 20px;
         z-index: 1000;
         color: #f2f2f2;
     }
 
     article{
-        background-color: white;
-        padding: 20px;
+        background-color: #B78F7C;
+        border: #B78F7f;
+        border-style: solid;
+        padding: 5%;
+    }
 
+    article h2{
+        color: #f2f2f2;
     }
     article img{
         width: 100%;
@@ -142,6 +146,17 @@
 
     .forecast{
         display: none;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .forecast table{
+        border: #0C486F;
+        border-style: solid;
+    }
+    .forecast th{
+        background-color: #b3dbf7;
+        color: #f2f2f2;
     }
 
     .contact-info img{

@@ -12,11 +12,13 @@
         margin: 0px;
         text-decoration: none !important;
         padding-left: 0px;
+        display: inline;
     }
     
     #menu li {
         float: center;
         border-right:1px solid #bbb;
+        display: inline;
     }
 
     #menu li.active{
@@ -33,6 +35,11 @@
     #menu li:last-child {
         border-right: none;
     }
+    
+    .contact-info img{
+        width: 5%;
+    }
+
     
 }
 
