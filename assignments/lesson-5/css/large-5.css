@@ -1,0 +1,37 @@
+#menu {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    color: #f2f2f2;
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+    text-decoration: none !important;
+    padding-left: 0px;
+  }
+  
+#menu li {
+    float: center;
+    border-right:1px solid #bbb;
+  }
+
+#menu li.active{
+    background-color: #0C486F !important;
+
+}
+
+#menu li:hover{
+    background-color: #112B48; 
+    color: #f2f2f2;
+
+}
+  
+#menu li:last-child {
+    border-right: none;
+}
+  
+
+
+
+
+
