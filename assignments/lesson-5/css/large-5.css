@@ -39,9 +39,13 @@
     .contact-info img{
         width: 5%;
     }
+    .contact-info h2, h4, p{
+        padding: 0 5%;
+    }
 
    div.info{
         display: inline-block;
+        vertical-align: top;
     }
 
     .mapouter{
