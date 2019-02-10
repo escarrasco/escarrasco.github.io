@@ -38,12 +38,10 @@
     
     .contact-info img{
         width: 5%;
+        padding-left: 5%;
     }
     .contact-info h2, h4, p{
         padding: 0 5%;
-    }
-    .contact-info img{
-        padding-left: 5%;
     }
    div.info{
         display: inline-block;
@@ -52,7 +50,7 @@
 
     .mapouter{
         display: inline-block;
-        width: 50%;
+        width: 40%;
     }
 
     .gmap_canvas{
