@@ -4,13 +4,13 @@
         src: url('https://fonts.googleapis.com/css?family=Raleway') ;
     }
     @font-face {
-        font-family: 'Roboto-Slab';
+        font-family: 'Roboto Slab';
         src: url('https://fonts.googleapis.com/css?family=Roboto+Slab') ;
     }
 
     body {
         background-color:white;
-        font-family: 'Roboto-Slab', serif;
+        font-family: 'Roboto Slab', serif;
     }
 
     header {
