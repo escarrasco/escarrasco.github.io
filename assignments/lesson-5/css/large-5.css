@@ -42,10 +42,12 @@
     }
     .contact-info h2, h4, p{
         padding: 0 5%;
+        width: 50%;
     }
    div.info{
         display: inline-block;
         vertical-align: top;
+        width: 50%;
     }
 
     .mapouter{
