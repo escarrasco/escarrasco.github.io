@@ -87,10 +87,8 @@
     #menu li:first-child { 
         display: none;
     }
-    #menu{
-        display: block;
-    }
-    #menu li {
+    
+    #menu a {
         display: inline-block;
     }
 
