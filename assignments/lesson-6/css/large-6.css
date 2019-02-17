@@ -1,0 +1,90 @@
+@media screen and (min-width: 721px) {
+    .forecast{
+        display: block;
+    }
+    #menu {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        color: #f2f2f2;
+        list-style-type: none;
+        text-align: center;
+        margin: 0px;
+        text-decoration: none !important;
+        padding-left: 0px;
+        display: inline;
+    }
+    
+    #menu li {
+        border-right:1px solid #f2f2f2;
+        display: inline;
+        padding: 10px;
+    }
+
+    #menu li.active{
+        background-color: #0C486F !important;
+
+    }
+
+    #menu li:hover{
+        background-color: #112B48; 
+        color: #f2f2f2;
+
+    }
+    
+    #menu li:last-child {
+        border-right: none;
+    }
+    
+    .contact-info img{
+        width: 5%;
+        padding-left: 5%;
+    }
+    .contact-info h2, h4, p{
+        padding: 0 5%;
+        width: 50%;
+    }
+   div.info{
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    .mapouter{
+        display: inline-block;
+        width: 40%;
+    }
+
+    .gmap_canvas{
+        height: 300px;
+    }
+
+    article{
+        position: relative;
+        margin: 5%;
+    }
+    article img{
+        width: 18%;
+        padding: 3%;
+        float: right;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        z-index: 1000;
+    }
+
+    article div{
+        width: 70%;
+    }
+
+    nav{
+        text-align: center;
+        padding: 10px;
+        background-color: #B78F7C;
+    }
+
+}
+
+
+
+
