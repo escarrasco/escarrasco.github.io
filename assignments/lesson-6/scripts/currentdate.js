@@ -10,5 +10,5 @@ function currentDate() {
     weekday[6] = "Saturday";
   
     var n = weekday[d.getDay()];
-    document.getElementById("currentDate").innerHTML = n+', '+ d;
+    document.getElementById("currentDate").innerHTML = n + ', ';
   }
