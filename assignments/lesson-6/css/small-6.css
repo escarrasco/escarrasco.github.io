@@ -122,7 +122,7 @@
         width: 100%;
     }
     .weather-summary div{
-        background-color: #112B48;
+        background-color: rgba(17, 43, 72, 0.637);
         margin: 5%; 
         padding: 5%;
         float: left;
