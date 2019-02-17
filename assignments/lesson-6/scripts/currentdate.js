@@ -8,7 +8,22 @@ function currentDate() {
     weekday[4] = "Thursday";
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
+
+    var month = new Array(  "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June",
+                            "July",
+                            "August",
+                            "September",
+                            "Octuber",
+                            "November",
+                            "December"
+                        );
   
-    var n = weekday[d.getDay()];
-    document.getElementById("currentDate").innerHTML = n + ', ';
+    var day = weekday[d.getDay()];
+    var m = month[d.getMonth()];
+    document.getElementById("currentDate").innerHTML = day + ', ' + d.getDate() + ' ' + m + ' ' + d.getFullYear();
   }
