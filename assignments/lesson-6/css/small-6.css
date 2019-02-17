@@ -114,7 +114,11 @@
         padding: 5%;
         position: relative;
     }
+
     .weather-summary figure{
+        margin: auto;
+    }
+    .weather-summary img{
         width: 100%;
     }
     .weather-summary div{
