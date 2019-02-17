@@ -83,8 +83,15 @@
         background-color: #B78F7C;
     }
 
+
     #menu li:first-child { 
         display: none;
+    }
+    #menu{
+        display: block;
+    }
+    #menu li {
+        display: inline-block;
     }
 
 }
