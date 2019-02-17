@@ -179,7 +179,7 @@
   <ul class="navigation responsive">
   */
 	.responsive li { 
-        display: block; 
+        display: block !important; 
     }
 
     #menu li:first-child { 
