@@ -180,9 +180,11 @@
     }
     #menu li { 
         display: none;
+
     }
     #menu a {	
         display: block;	
+        padding: .75rem;
     }
     
     /* the onclick JS toggles the .repsonsive class from display none (#menu li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
