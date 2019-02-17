@@ -114,7 +114,7 @@
         padding: 5%;
         position: relative;
     }
-    .weather-summary img{
+    .weather-summary figure{
         width: 100%;
     }
     .weather-summary div{
