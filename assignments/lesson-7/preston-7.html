@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Rainbow Detector-The weather radar</title>
+      <meta name="description" content="Rainbow Detector-A weather site project has been serving the region for over 30 years.">
+      <link rel="stylesheet" href="/assignments/lesson-7/css/normalize.css">
+      <link rel="stylesheet" href="/assignments/lesson-7/css/small-7.css">
+      <link rel="stylesheet" href="/assignments/lesson-7/css/large-7.css">
+      <link rel="shortcut icon" type="image/png" href="/assignments/lesson-7/images/favicon.png"/>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+     
+  </head>
+  <body>
+    <header>
+        <img src="/assignments/lesson-7/images/rainbow-detector-logo2.png" alt="rainbow detector logo">
+        <section class="headings">
+            <h1>Rainbow Detector</h1>
+            <div class="motto">
+                <h2>The weather information you need</h2>
+            </div>
+        </section>
+        
+    </header>      
+    <nav>
+        <ul id="menu">  
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" title="Home">Home</a></li>
+            <li  class="active"><a href="#" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="#" title="Storm Center">Storm Center</a></li>
+            <li><a href="#" title="Gallery">Gallery</a></li>
+        </ul> 
+    </nav>
+    <main>
+         <h1>Preston Idaho</h1>        
+        <section class="weather-summary">
+            <figure>
+                    <img src="/assignments/lesson-7/images/hero500.jpg" alt="hero image" sizes="100vw"
+                        srcset="/assignments/lesson-7/images/hero200.jpg 200w,
+                                /assignments/lesson-7/images/hero500.jpg 500w,
+                                /assignments/lesson-7/images/hero800.jpg 800w,
+                                /assignments/lesson-7/images/hero1100.jpg 1100w">
+            </figure>
+            <div>
+                <h2>Weather Summary</h2>
+                <table>
+                    <tr>
+                        <td>Currently:</td>
+                        <td>Overcast</td>
+                    </tr>
+                    <tr>
+                        <td>High:</td>
+                        <td id="temperature">20&#8457;</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td id="windChill"></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity:</td>
+                        <td>57&percnt;</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed:</td>
+                        <td id="speed">5mph</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </section>
+        <section class="forecast">
+            <h2>5 Day Forecast</h2>
+            <table>
+                <tr>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Thu</th>
+                    <th>Wed</th>
+                </tr>
+                <tr>
+                    <td><img src="/assignments/lesson-7/images/snow.png" alt="snow">26&#8457;</td>
+                    <td><img src="/assignments/lesson-7/images/snow.png" alt="snow">26&#8457;</td>
+                    <td><img src="/assignments/lesson-7/images/partly_cloudy.png" alt="partly cloudy">24&#8457;</td>
+                    <td><img src="/assignments/lesson-7/images/partly_cloudy.png" alt="partly cloudy">29&#8457;</td>
+                    <td><img src="/assignments/lesson-7/images/snow.png" alt="snow">36&#8457;</td>
+                </tr>
+            </table>
+        </section>
+        <article>
+            <img src="/assignments/lesson-7/images/rotary-teacher.jpg" alt="Credit: The Herald Journal (https://www.hjnews.com)" title="Credit: The Herald Journal (https://www.hjnews.com)">
+            <div>
+                <h2>Rotary Teacher of the Month</h2>
+                <h4>By NECIA P. SEAMONS Citizen editor</h4>
+                    <p>Eric Allred</p>
+                    <p>Eric Allred, has taught for 21 years at Preston High School. He currently teaches electronics and automated manufacturing, believing that youth have more routes to successful careers than the traditional college path. He has introduced robotics and 3-D printers to his curriculum.</p>
+                    <p>His students have been participating in the state electronics program, faring well in competitions. Last year, his student, Jordan Johnson was able to advance to the national level... </p><a href="https://www.hjnews.com/preston/news/rotary-teacher-of-the-month/article_8ee49872-2990-11e9-b9ef-b367e77563ae.html" target="?blank">Continue to full article</a>
+            </div>
+        </article>
+        <section class="contact-info">
+            <div class="info">
+                <h2>Contact Information</h2>
+                    <h4>Rainbow Detector</h4>
+                    <p>1020 Main Street </p>
+                    <p>999 999 9999</p>
+                    <p>info@rainbowdetector.com</p>        
+                    <a href="#"><img src="/assignments/lesson-7/images/facebook.png" alt="facebook icon"></a>
+                    <a href="#"><img src="/assignments/lesson-7/images/twitter.png" alt="twitter icon"></a>
+                    <a href="#"><img src="/assignments/lesson-7/images/whatsapp.png" alt="whatsapp icon"></a>
+            </div>
+
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=plaza%20principal%20santa%20cruz%20de%20la%20sierra&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="map"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2019 &verbar;  Rainbow Detector  &verbar; Esther Carrasco </p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="/assignments/lesson-7/scripts/hamburger.js"></script>
+    <script src="/assignments/lesson-7/scripts/currentdate.js"></script>
+    <script src="/assignments/lesson-7/scripts/windchill.js"></script>
+    <script>
+        window.onload = function() {
+           currentDate();
+           windChill();
+        }
+        </script> 
+  </body>
+</html>
