@@ -208,4 +208,11 @@
     }
     .grid-item img{
         width: 100%;
+        font-size: smaller;
+    }
+    .grid-item{
+        box-shadow: 5px 5px 5px #333;
+    }
+    .grid-item:hover {
+        box-shadow: 0 0 50px #333;
     }
