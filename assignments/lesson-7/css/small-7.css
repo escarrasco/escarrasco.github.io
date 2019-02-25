@@ -218,8 +218,7 @@
         margin: 0;
     }
     .gallery-grid figure figcaption{
-        padding-left: 5px;
-        padding-right: 5px;
+        padding:3%;
     }
     
     .grid-item{
