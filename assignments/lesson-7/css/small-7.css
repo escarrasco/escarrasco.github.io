@@ -204,3 +204,6 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .grid-item img{
+        width: 100%;
+    }
