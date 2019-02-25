@@ -5,5 +5,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
+    .grid-item img{
+        width: 50%;
+    }
 }
