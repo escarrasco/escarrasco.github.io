@@ -98,7 +98,11 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     footer p{
-        width: 100% !important;
+        width: 100%;
+    }
+    header {
+        flex-direction: row;
+        justify-content: center;
     }
 }
 

@@ -20,6 +20,8 @@
         box-shadow: 0 0 30px #777;
         text-align: center;
         color: #f2f2f2 !important;
+        display: flex;
+        flex-direction: column;
     }
 
     header img, .headings {
