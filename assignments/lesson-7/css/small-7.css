@@ -64,6 +64,8 @@
         margin: 0px;
         text-decoration: none !important;
         padding-left: 0px;
+        display: flex;
+	    flex-direction: column;
     }
 
     #menu a:link, a:visited {
