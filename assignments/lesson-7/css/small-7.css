@@ -208,11 +208,20 @@
         column-gap: 20px;
         row-gap: 20px;
         color: #777;
+        font: small-caption;
+        padding: 5%;
     }
     .grid-item img{
         width: 100%;
-        font-size: smaller;
     }
+    .gallery-grid figure{
+        margin: 0;
+    }
+    .gallery-grid figure figcaption{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
     .grid-item{
         box-shadow: 5px 5px 5px #eee;
     }
