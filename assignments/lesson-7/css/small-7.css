@@ -199,3 +199,8 @@
 	.responsive li { 
         display: block !important; 
     }
+
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
