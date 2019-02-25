@@ -41,7 +41,7 @@
         width: 5%;
         padding-left: 5%;
     }
-    .contact-info h2, h4, p{
+    .contact-info h2 h4 p{
         padding: 0 5%;
         width: 50%;
     }
@@ -96,6 +96,9 @@
     .gallery-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-item:hover {
+        box-shadow: 0 0 50px #333;
     }
     footer p{
         width: 100%;
