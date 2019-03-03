@@ -39,22 +39,22 @@
         <h1>Storm Center</h1>
                 
         <section class="storm-form">
-            <h1>Report an Unusual Weather</h1>
             <form method="GET" action="thanks.html">
+                    <h1>Report an Unusual Weather</h1>
                     <fieldset>
                         <legend>Contact Information</legend>
                         
-                        <label for="name">Full Name (5 characters minimum):&#42;</label>
-                        <input type="text" name="name" id="name" minlength="5" size="10" required>
+                        <label for="name">Full Name (required - 5 characters minimum):</label>
+                        <input type="text" name="name" id="name" minlength="5" pattern="[A-Za-z]" required>
         
                         <label for="email">eMail:</label>
                         <input type="email" name="email" id="email" placeholder="example@mail.com" size="10">
         
-                        <label for="phone">Phone Number:&#42;</label>
-                        <input type="tel" name="phone" id="phone" size="10" required>
+                        <label for="phone">Phone Number(required):</label>
+                        <input type="tel" name="phone" id="phone" required>
         
-                        <label for="zip">ZIP code :</label>
-                        <input type="number" name="zip" id="zip" size="10">
+                        <label for="zip">ZIP code (required):</label>
+                        <input type="number" name="zip" id="zip" required>
                     </fieldset>
                     <fieldset>
                             <legend>Storm Information</legend>
@@ -78,22 +78,22 @@
             
                             <label for="storm-region">Storm Region:</label>
                             <select id="storm-region"> 
-                                    <option value="" disabled>--Select Region--</option>
+                                    <option value="" disabled selected>--Select Region--</option>
                                     <option value="Preston">Preston</option>
                                     <option value="Soda Springs">Soda Springs</option>
                                     <option value="Fish Haven">Fish Haven</option>
                             </select>
         
                             <label>Are you in danger?</label>
-                            <input type="radio" name="in-danger" value="Yes"><label>Yes</label>
-                            <input type="radio" name="in-danger" value="Maybe"><label>Maybe</label>
-                            <input type="radio" name="in-danger" value="No"><label>No</label>
+                            <input type="radio" name="in-danger" value="Yes"><label class="form-radio">Yes</label>
+                            <input type="radio" name="in-danger" value="Maybe"><label class="form-radio">Maybe</label>
+                            <input type="radio" name="in-danger" value="No"><label class="form-radio">No</label>
                     </fieldset>
                     <fieldset>
                             <legend>Additional Information</legend>
                             
                             <label for="comments">Comments:</label>
-                            <textarea name="comments" id="comments" rows="5" cols="50" ></textarea>
+                            <textarea name="comments" id="comments" rows="5"></textarea>
                     </fieldset>
                     <input type="submit" value="Submit">
                 </form>

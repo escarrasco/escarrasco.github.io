@@ -214,3 +214,97 @@
     .grid-item{
         box-shadow: 5px 5px 5px #eee;
     }
+
+    .storm-form{
+        padding: 0 5%;
+        color: #f2f2f2;
+    }
+    .storm-form h1{
+        color: #f2f2f2;
+        font-size: 25px;
+    }
+    .storm-form form{
+        margin: 0 auto;
+        padding: 2% 5%;
+        border: 1px solid #777;
+        border-radius: 20px;
+        background: #0C486F;
+        max-width: 480px;
+    }
+    .storm-form form fieldset{
+        margin: 35px 0;
+        padding: 25px 10px;
+        border-radius: 5px;
+    }
+
+    .storm-form form fieldset legend{
+        font-size: 20px;
+        font-family: 'Raleway';
+    }
+
+
+    .storm-form form label{
+        display: block;
+    }
+    .storm-form form input, select, textarea{
+        display: block;
+        width: 95%;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .form-radio,  .storm-form form input[type=radio] {
+        display: inline !important;
+        width: auto;
+        padding: 10px;
+    }
+
+    .storm-form form input[type=range] {
+        -webkit-appearance: none;
+        width: 95%;
+        height: 25px;
+        background: #f2f2f2;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        padding: 0;
+        border-radius: 0;
+        display: inline;
+        }
+      
+    .storm-form form input[type=range]:hover {
+        opacity: 1;
+      }
+      .storm-form form input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #B78F7C;
+        cursor: pointer;
+      }
+      
+      .storm-form form input[type=range]::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #B78F7C;
+        cursor: pointer;
+      }
+      
+
+    .storm-form form input[type=submit] {
+        background-color:#B78F7C;
+        cursor:pointer;
+        padding: 8px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+        color: #f2f2f2;
+        width: 100%;
+    }
+    
+    .storm-form form input[type=submit]:hover {
+        background-color:rgba(183,143,124,0.8);
+    }
