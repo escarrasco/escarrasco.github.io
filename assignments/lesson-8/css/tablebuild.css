@@ -1,32 +1,47 @@
-    body {
+   
+   @font-face {
+    font-family: 'Ubuntu';
+    src: url('https://fonts.googleapis.com/css?family=Ubuntu') ;
+    }
+   
+   body {
         font-family: 'Ubuntu', sans-serif;
         color: black;
         font-size: 16px;
     }
     table{
-        box-shadow: 20px 20px 10px 10px #628ca6;
+        text-align: center;
+        border-collapse: collapse;
+        box-shadow: 10px 10px 20px #628ca6;
+        margin: 0px auto;
     }
 
     td, th {
-        border: 1px solid #ddd;
+        border: 1px solid #c6c8c7;
         padding: 8px;
       }
 
-    thead :first-child{
+    thead tr:first-child{
         font-size: 20px;
         background: #7fb9c2;
     }
-    thead :nth-child(2){
+    thead tr:nth-child(2){
         font-weight:bold;
         color: white;
         background: #628ca6; 
     }
-    tbody:nth-child(odd){
+    tbody tr:nth-child(odd){
         background: #e7f0ed;
     }
-    tbody:nth-child(even){
+    tbody tr:nth-child(even){
         background: #e7ffed;
     }
+
+    tbody tr:nth-child(4) td:nth-child(3){
+        background: #628ca6;
+        color: white;
+    }
+
     tfoot{
         font-size: 12px;
         background: #628ca6;
