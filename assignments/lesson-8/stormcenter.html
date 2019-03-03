@@ -69,25 +69,30 @@
                             <option value="Tornado">
                     </datalist>
 
-                    <label for="storm-severity">Storm Severity (1 to 10):&#42;</label>
+                    <label for="storm-severity">Storm Severity (1 to 10):</label>
                     <input type="range" name="storm-severity" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span><br>
     
-                    <label for="storm-region">Storm Region :</label>
+                    <label for="storm-region">Storm Region:</label>
                     <select id="storm-region"> 
-                            <option value="" disabled>--Select Region--</option>
-                            <option value="Preston">"Preston</option>
+                            <option value="" seleted disabled>--Select Region--</option>
+                            <option value="Preston">Preston</option>
                             <option value="Soda Springs">Soda Springs</option>
                             <option value="Fish Haven">Fish Haven</option>
-                        </select>
+                    </select>
+
+                    <label for="in-danger">Are you in danger?</label>
+                    <input type="radio" name="in-danger" value="Yes"><label for="Yes">Yes</label>
+                    <input type="radio" name="in-danger" value="Maybe"><label for="Maybe">Maybe</label>
+                    <input type="radio" name="in-danger" value="No"><label for="No">No</label>
             </fieldset>
             <fieldset>
-                    <legend>Contact Information</legend>
+                    <legend>Additional Information</legend>
                     
-                    <label for="name">Full Name (5 characters minimum):&#42;</label>
-                    <input type="text" name="name" minlength="5" size="10" required>
+                    <label for="comments">Comments:</label>
+                    <textarea rows="5" cols="50"></textarea>
             </fieldset>
-
+            <input type="submit" value="Submit">
         </form>
         <section class="contact-info">
                 <div class="info">
@@ -112,9 +117,9 @@
         <p>Copyright &copy; 2019 &verbar;  Rainbow Detector  &verbar; Esther Carrasco </p>
         <p><span id="currentDate"></span></p>
     </footer>
-    <script src="/assignments/lesson-7/scripts/hamburger.js"></script>
-    <script src="/assignments/lesson-7/scripts/currentdate.js"></script>
-    <script src="/assignments/lesson-7/scripts/windchill.js"></script>
+    <script src="/assignments/lesson-8/scripts/hamburger.js"></script>
+    <script src="/assignments/lesson-8/scripts/currentdate.js"></script>
+    <script src="/assignments/lesson-8/scripts/range.js"></script>
     <script>
         window.onload = function() {
            currentDate();
