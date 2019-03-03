@@ -1,9 +1,4 @@
-   
-   @font-face {
-    font-family: 'Ubuntu';
-    src: url('https://fonts.googleapis.com/css?family=Ubuntu') ;
-    }
-   
+     
    body {
         font-family: 'Ubuntu', sans-serif;
         color: black;
