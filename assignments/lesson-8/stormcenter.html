@@ -45,25 +45,25 @@
                         <legend>Contact Information</legend>
                         
                         <label for="name">Full Name (5 characters minimum):&#42;</label>
-                        <input type="text" name="name" minlength="5" size="10" required>
+                        <input type="text" name="name" id="name" minlength="5" size="10" required>
         
                         <label for="email">eMail:</label>
-                        <input type="email" name="email" placeholder="example@mail.com" size="10">
+                        <input type="email" name="email" id="email" placeholder="example@mail.com" size="10">
         
                         <label for="phone">Phone Number:&#42;</label>
-                        <input type="tel" name="phone" size="10" required>
+                        <input type="tel" name="phone" id="phone" size="10" required>
         
                         <label for="zip">ZIP code :</label>
-                        <input type="number" name="zip" minlength="5" size="10" required>
+                        <input type="number" name="zip" id="zip" size="10">
                     </fieldset>
                     <fieldset>
                             <legend>Storm Information</legend>
                             
                             <label for="storm-date">Storm Date:</label>
-                            <input type="date" name="storm-date">
+                            <input type="date" name="storm-date" id="storm-date" min="2018-01-01" max="2020-01-01">
             
                             <label for="storm-type">Storm Type:</label>
-                            <input type="text" name="storm-type" list="stormType" size="10">
+                            <input type="text" name="storm-type" id="storm-type" list="stormType">
                             <datalist id="stormType">
                                     <option value="Flash Flood">
                                     <option value="Hail">
@@ -73,27 +73,27 @@
                             </datalist>
         
                             <label for="storm-severity">Storm Severity (1 to 10):</label>
-                            <input type="range" name="storm-severity" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <input type="range" name="storm-severity" id="storm-severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">5</span><br>
             
                             <label for="storm-region">Storm Region:</label>
                             <select id="storm-region"> 
-                                    <option value="" seleted disabled>--Select Region--</option>
+                                    <option value="" disabled>--Select Region--</option>
                                     <option value="Preston">Preston</option>
                                     <option value="Soda Springs">Soda Springs</option>
                                     <option value="Fish Haven">Fish Haven</option>
                             </select>
         
-                            <label for="in-danger">Are you in danger?</label>
-                            <input type="radio" name="in-danger" value="Yes"><label for="Yes">Yes</label>
-                            <input type="radio" name="in-danger" value="Maybe"><label for="Maybe">Maybe</label>
-                            <input type="radio" name="in-danger" value="No"><label for="No">No</label>
+                            <label>Are you in danger?</label>
+                            <input type="radio" name="in-danger" value="Yes"><label>Yes</label>
+                            <input type="radio" name="in-danger" value="Maybe"><label>Maybe</label>
+                            <input type="radio" name="in-danger" value="No"><label>No</label>
                     </fieldset>
                     <fieldset>
                             <legend>Additional Information</legend>
                             
                             <label for="comments">Comments:</label>
-                            <textarea rows="5" cols="50"></textarea>
+                            <textarea name="comments" id="comments" rows="5" cols="50" ></textarea>
                     </fieldset>
                     <input type="submit" value="Submit">
                 </form>
@@ -112,7 +112,7 @@
     
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=plaza%20principal%20santa%20cruz%20de%20la%20sierra&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="map"></iframe>
+                        <iframe width="700" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=plaza%20principal%20santa%20cruz%20de%20la%20sierra&t=&z=13&ie=UTF8&iwloc=&output=embed" title="map"></iframe>
                     </div>
                 </div>
             </section>
