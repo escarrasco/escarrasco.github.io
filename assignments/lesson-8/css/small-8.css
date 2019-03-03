@@ -308,3 +308,10 @@
     .storm-form form input[type=submit]:hover {
         background-color:rgba(183,143,124,0.8);
     }
+
+    .thanks{
+        padding: 5%;
+        color: #777;
+        font-size: 20px;
+        text-align: center;
+    }
