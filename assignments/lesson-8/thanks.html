@@ -37,67 +37,10 @@
     </nav>
     <main>
         <h1>Storm Center</h1>
-                
-        <section class="storm-form">
-            <h1>Report an Unusual Weather</h1>
-            <form method="GET" action="thanks.html">
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        
-                        <label for="name">Full Name (5 characters minimum):&#42;</label>
-                        <input type="text" name="name" minlength="5" size="10" required>
-        
-                        <label for="email">eMail:</label>
-                        <input type="email" name="email" placeholder="example@mail.com" size="10">
-        
-                        <label for="phone">Phone Number:&#42;</label>
-                        <input type="tel" name="phone" size="10" required>
-        
-                        <label for="zip">ZIP code :</label>
-                        <input type="number" name="zip" minlength="5" size="10" required>
-                    </fieldset>
-                    <fieldset>
-                            <legend>Storm Information</legend>
-                            
-                            <label for="storm-date">Storm Date:</label>
-                            <input type="date" name="storm-date">
-            
-                            <label for="storm-type">Storm Type:</label>
-                            <input type="text" name="storm-type" list="stormType" size="10">
-                            <datalist id="stormType">
-                                    <option value="Flash Flood">
-                                    <option value="Hail">
-                                    <option value="Hurricane">
-                                    <option value="Thunderstorm">
-                                    <option value="Tornado">
-                            </datalist>
-        
-                            <label for="storm-severity">Storm Severity (1 to 10):</label>
-                            <input type="range" name="storm-severity" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                            <span id="ratingvalue">5</span><br>
-            
-                            <label for="storm-region">Storm Region:</label>
-                            <select id="storm-region"> 
-                                    <option value="" seleted disabled>--Select Region--</option>
-                                    <option value="Preston">Preston</option>
-                                    <option value="Soda Springs">Soda Springs</option>
-                                    <option value="Fish Haven">Fish Haven</option>
-                            </select>
-        
-                            <label for="in-danger">Are you in danger?</label>
-                            <input type="radio" name="in-danger" value="Yes"><label for="Yes">Yes</label>
-                            <input type="radio" name="in-danger" value="Maybe"><label for="Maybe">Maybe</label>
-                            <input type="radio" name="in-danger" value="No"><label for="No">No</label>
-                    </fieldset>
-                    <fieldset>
-                            <legend>Additional Information</legend>
-                            
-                            <label for="comments">Comments:</label>
-                            <textarea rows="5" cols="50"></textarea>
-                    </fieldset>
-                    <input type="submit" value="Submit">
-                </form>
+        <section class="storm-form">        
+            <h2>Thanks, You successfully completed the Storm Report</h2>
         </section>
+        
         <section class="contact-info">
                 <div class="info">
                     <h2>Contact Information</h2>
