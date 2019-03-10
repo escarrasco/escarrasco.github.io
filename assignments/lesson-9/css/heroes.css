@@ -7,11 +7,13 @@ html {
   body {
     width: 800px;
     margin: 0 auto;
+    color: #94A6AB;
   }
   
   h1, h2 {
     /*font-family: 'Faster One', cursive;*/
     font-family: 'Cute Font', cursive;
+    color: #1B503E;
   }
   
   /* header styles */
@@ -25,6 +27,7 @@ html {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+    
   }
   
   /* section styles */
