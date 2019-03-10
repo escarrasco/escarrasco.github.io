@@ -339,7 +339,7 @@
         font-style: italic;
     }
    .town-grid article li{
-       text-decoration: none;
+       list-style-type: none;
    }
     
     .town-grid article{
