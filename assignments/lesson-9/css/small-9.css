@@ -333,11 +333,14 @@
 
     .town-grid h3{
         color: #B78F7C;
+        font-size: 20px;
     }
     .town-grid h4{
         font-style: italic;
     }
-   
+   .town-grid article li{
+       text-decoration: none;
+   }
     
     .town-grid article{
         background-color: white;
