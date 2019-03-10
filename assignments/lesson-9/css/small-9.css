@@ -338,8 +338,9 @@
     .town-grid h4{
         font-style: italic;
     }
-   .town-grid article li{
+   .town-grid article ul{
        list-style-type: none;
+       padding: 0;
    }
     
     .town-grid article{
