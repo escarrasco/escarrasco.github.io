@@ -71,7 +71,7 @@
            currentDate();
         }
 
-        var section = document.getElementsByClassName('town-grid');
+        var section = document.querySelector('.town-grid');
         var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
