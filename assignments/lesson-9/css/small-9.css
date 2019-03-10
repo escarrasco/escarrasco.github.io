@@ -326,6 +326,14 @@
     }
     .town-grid article img{
         width: 100%;
+
+    }
+
+    .town-grid h3{
+        color: #B78F7C;
+    }
+    .town-grid h4{
+        font-style: italic;
     }
    
     

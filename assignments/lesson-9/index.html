@@ -37,7 +37,7 @@
         </ul> 
     </nav>
     <main>
-         <h1>Welcome</h1>        
+         <h2>Welcome</h2>        
         <section class="town-grid">
             
         </section>
@@ -88,8 +88,8 @@
                 
             for (var i = 0; i < towns.length; i++) {
                 var myArticle = document.createElement('article');
-                var name = document.createElement('h2');
-                var motto = document.createElement('h3');
+                var name = document.createElement('h3');
+                var motto = document.createElement('h4');
                 var year = document.createElement('p');
                 var population = document.createElement('p');
                 var rainFall = document.createElement('p');
@@ -99,7 +99,7 @@
                 picture.setAttribute('alt', 'town picture');
 
                 name.textContent = towns[i].name;
-                name.textContent = towns[i].motto;
+                motto.textContent = towns[i].motto;
                 year.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 population.textContent = 'Current Population ' + towns[i].currentPopulation;
                 rainFall.textContent = 'Average Rain Fall: ' + towns[i].averageRainFall;
