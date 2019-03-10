@@ -33,11 +33,12 @@ html {
   /* section styles */
   
   section article {
-    width: 33%;
+    width: 30%;
     float: left;
     background-color: white;
     border: 1px solid #f2f2f2;
     box-shadow: 5px 5px 5px #eee;
+    margin: auto 10px;
   }
   
   section p {
