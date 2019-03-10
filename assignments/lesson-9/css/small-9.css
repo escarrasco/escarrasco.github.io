@@ -322,7 +322,6 @@
         column-gap: 20px;
         row-gap: 20px;
         color: #777;
-        font: small-caption;
         padding: 5%;
     }
     .town-grid article img{
@@ -331,5 +330,7 @@
    
     
     .town-grid article{
+        background-color: white;
+        border: 1px solid #bbb;
         box-shadow: 5px 5px 5px #eee;
     }
