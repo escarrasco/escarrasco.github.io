@@ -96,15 +96,16 @@
                 var events = document.createElement('ul');
 
                 name.textContent = towns[i].name;
-                year.textContent = 'Secret identity: ' + towns[i].secretIdentity;
-                population.textContent = 'Age: ' + towns[i].age;
-                rainFall.textContent = 'Superpowers:';
+                name.textContent = towns[i].motto;
+                year.textContent = 'Year Founded: ' + towns[i].yearFounded;
+                population.textContent = 'Current Population ' + towns[i].currentPopulation;
+                rainFall.textContent = 'Average Rain Fall: ' + towns[i].averageRainFall;
+                events.textContent = 'Events' ;
                 
                 var eventsObj = towns[i].events;
-                var keys = Object.keys(eventsObj);
                 for (var j = 0; j < eventsObj.length; j++) {
                     var listItem = document.createElement('li');
-                    listItem.textContent = keys[j] +':'+ eventsObj[j];
+                    listItem.textContent = eventsObj[j];
                     events.appendChild(listItem);
                 }
 
