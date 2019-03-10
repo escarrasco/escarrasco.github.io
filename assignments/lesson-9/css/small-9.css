@@ -326,6 +326,8 @@
     }
     .town-grid article img{
         width: 100%;
+        position: initial;
+        padding: 0;
 
     }
 
