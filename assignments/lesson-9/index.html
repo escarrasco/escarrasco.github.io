@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Rainbow Detector-The weather radar</title>
+      <meta name="description" content="Rainbow Detector-A weather site project has been serving the region for over 30 years.">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small-9.css">
+      <link rel="stylesheet" href="css/medium-9.css">
+      <link rel="stylesheet" href="css/large-9.css">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+     
+  </head>
+  <body>
+    <header>
+        <img src="images/rainbow-detector-logo2.png" alt="rainbow detector logo">
+        <section class="headings">
+            <h1>Rainbow Detector</h1>
+            <div class="motto">
+                <h2>The weather information you need</h2>
+            </div>
+        </section>
+        
+    </header>      
+    <nav>
+        <ul id="menu">  
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="preston-9.html" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+            <li class="active"><a href="#" title="Gallery">Gallery</a></li>
+        </ul> 
+    </nav>
+    <main>
+         <h1>Weather Gallery</h1>        
+        <div class="gallery-grid">
+            <div class="grid-item">
+                <figure>
+                    <img class="gallery-img" src="images/fog640.jpeg" alt="fog" sizes="100vw"
+                    srcset="images/fog1280.jpeg 1280w,
+                            images/fog1920.jpeg 1920w"
+                    >
+                    <figcaption><i>Fog over the field</i></figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img class="gallery-img" src="images/lightening640.jpeg" alt="lightening" sizes="100vw"
+                    srcset="images/lightening1280.jpeg 1280w,
+                            images/lightening1920.jpeg 1920w"
+                    >
+                    <figcaption><i>Lightening strikes the city</i></figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img class="gallery-img" src="images/rainbow640.jpeg" alt="rainbow" sizes="100vw"
+                    srcset="images/rainbow1280.jpeg 1280w,
+                            images/rainbow1920.jpeg 1920w"
+                    >
+                     <figcaption><i>Rainbow over the dock</i></figcaption>
+            
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img class="gallery-img" src="images/rainy640.jpeg" alt="rainy" sizes="100vw"
+                    srcset="images/rainy1280.jpeg 1280w,
+                            images/rainy1920.jpeg 1920w"
+                    >
+                    <figcaption><i>Rain over the Main road</i></figcaption>
+            
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img class="gallery-img" src="images/sunny640.jpeg" alt="sunny" sizes="100vw"
+                    srcset="images/sunny1280.jpeg 1280w,
+                            images/sunny1920.jpeg 1920w"
+                    >
+                    <figcaption><i>Sun over palm trees</i></figcaption>
+            
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img class="gallery-img" src="images/snowy640.jpeg" alt="snowy" sizes="100vw"
+                    srcset="images/snowy1280.jpeg 1280w,
+                            images/snowy1920.jpeg 1920w"
+                    >
+                    <figcaption><i>Trees covered in fresh snow</i></figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img class="gallery-img" src="images/cloudy640.jpeg" alt="cloudy" sizes="100vw"
+                    srcset="images/cloudy1280.jpeg 1280w,
+                            images/cloudy1920.jpeg 1920w"
+                    >
+                    <figcaption><i>Cold over the farm</i></figcaption>
+            
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2019 &verbar;  Rainbow Detector  &verbar; Esther Carrasco </p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script>
+        window.onload = function() {
+           currentDate();
+        }
+        </script> 
+  </body>
+</html>
