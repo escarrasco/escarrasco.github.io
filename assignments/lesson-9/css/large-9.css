@@ -107,6 +107,15 @@
         flex-direction: row;
         justify-content: center;
     }
+
+
+    .town-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .town-grid article:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
 
 
