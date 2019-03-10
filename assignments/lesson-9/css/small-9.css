@@ -315,3 +315,21 @@
         font-size: 20px;
         text-align: center;
     }
+
+    .town-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        color: #777;
+        font: small-caption;
+        padding: 5%;
+    }
+    .town-grid article img{
+        width: 100%;
+    }
+   
+    
+    .town-grid article{
+        box-shadow: 5px 5px 5px #eee;
+    }
