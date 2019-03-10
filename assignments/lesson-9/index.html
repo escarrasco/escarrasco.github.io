@@ -38,75 +38,9 @@
     </nav>
     <main>
          <h1>Weather Gallery</h1>        
-        <div class="gallery-grid">
-            <div class="grid-item">
-                <figure>
-                    <img class="gallery-img" src="images/fog640.jpeg" alt="fog" sizes="100vw"
-                    srcset="images/fog1280.jpeg 1280w,
-                            images/fog1920.jpeg 1920w"
-                    >
-                    <figcaption><i>Fog over the field</i></figcaption>
-                </figure>
-            </div>
-            <div class="grid-item">
-                <figure>
-                    <img class="gallery-img" src="images/lightening640.jpeg" alt="lightening" sizes="100vw"
-                    srcset="images/lightening1280.jpeg 1280w,
-                            images/lightening1920.jpeg 1920w"
-                    >
-                    <figcaption><i>Lightening strikes the city</i></figcaption>
-                </figure>
-            </div>
-            <div class="grid-item">
-                <figure>
-                    <img class="gallery-img" src="images/rainbow640.jpeg" alt="rainbow" sizes="100vw"
-                    srcset="images/rainbow1280.jpeg 1280w,
-                            images/rainbow1920.jpeg 1920w"
-                    >
-                     <figcaption><i>Rainbow over the dock</i></figcaption>
+        <section class="town-grid">
             
-                </figure>
-            </div>
-            <div class="grid-item">
-                <figure>
-                    <img class="gallery-img" src="images/rainy640.jpeg" alt="rainy" sizes="100vw"
-                    srcset="images/rainy1280.jpeg 1280w,
-                            images/rainy1920.jpeg 1920w"
-                    >
-                    <figcaption><i>Rain over the Main road</i></figcaption>
-            
-                </figure>
-            </div>
-            <div class="grid-item">
-                <figure>
-                    <img class="gallery-img" src="images/sunny640.jpeg" alt="sunny" sizes="100vw"
-                    srcset="images/sunny1280.jpeg 1280w,
-                            images/sunny1920.jpeg 1920w"
-                    >
-                    <figcaption><i>Sun over palm trees</i></figcaption>
-            
-                </figure>
-            </div>
-            <div class="grid-item">
-                <figure>
-                    <img class="gallery-img" src="images/snowy640.jpeg" alt="snowy" sizes="100vw"
-                    srcset="images/snowy1280.jpeg 1280w,
-                            images/snowy1920.jpeg 1920w"
-                    >
-                    <figcaption><i>Trees covered in fresh snow</i></figcaption>
-                </figure>
-            </div>
-            <div class="grid-item">
-                <figure>
-                    <img class="gallery-img" src="images/cloudy640.jpeg" alt="cloudy" sizes="100vw"
-                    srcset="images/cloudy1280.jpeg 1280w,
-                            images/cloudy1920.jpeg 1920w"
-                    >
-                    <figcaption><i>Cold over the farm</i></figcaption>
-            
-                </figure>
-            </div>
-        </div>
+        </section>
         <section class="contact-info">
             <div class="info">
                 <h2>Contact Information</h2>
@@ -135,6 +69,54 @@
     <script>
         window.onload = function() {
            currentDate();
+        }
+
+        var section = document.getElementsByClassName('town-grid');
+        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function() {
+            var townsData = request.response;
+            showTowns(townsData);
+        }
+
+        function showTowns(jsonObj) {
+            var towns = jsonObj['towns'];
+                
+            for (var i = 0; i < towns.length; i++) {
+                var myArticle = document.createElement('article');
+                var name = document.createElement('h2');
+                var motto = document.createElement('h3');
+                var year = document.createElement('p');
+                var population = document.createElement('p');
+                var rainFall = document.createElement('p');
+                var events = document.createElement('ul');
+
+                name.textContent = towns[i].name;
+                year.textContent = 'Secret identity: ' + towns[i].secretIdentity;
+                population.textContent = 'Age: ' + towns[i].age;
+                rainFall.textContent = 'Superpowers:';
+                
+                var eventsObj = towns[i].events;
+                var keys = Object.keys(eventsObj);
+                for (var j = 0; j < eventsObj.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = keys[j] +':'+ eventsObj[j];
+                    events.appendChild(listItem);
+                }
+
+                myArticle.appendChild(name);
+                myArticle.appendChild(motto);
+                myArticle.appendChild(year);
+                myArticle.appendChild(population);
+                myArticle.appendChild(rainFall);
+                myArticle.appendChild(events);
+
+                section.appendChild(myArticle);
+            }
         }
         </script> 
   </body>
