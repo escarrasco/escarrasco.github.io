@@ -1,0 +1,317 @@
+    body {
+        background-color:white;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    header {
+        margin: 10px 0px auto auto;
+        background-color: #112B48;
+        border: 1px solid #bbb;
+        box-shadow: 0 0 30px #777;
+        text-align: center;
+        color: #f2f2f2 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header img, .headings {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px;
+    }
+    header h1{
+        font-size: 35px;
+        margin-bottom: 0px;
+        color: #f2f2f2 !important;
+    }
+
+    header h2{
+        color: #f2f2f2;
+    }
+
+    .motto h2{
+        font-style: italic;
+        font-size: 15px !important;
+        margin-top: 0px !important;
+    }
+
+    h1{
+        font-size: 30px;
+        font-family: 'Raleway' , sans-serif;
+        color: #0C486F;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 25px;
+        font-family: 'Raleway' , sans-serif;
+        color: #B78F7C;
+    }
+
+    #menu{
+        background-color: #B78F7C;
+        color: #f2f2f2;
+        list-style-type: none;
+        text-align: center;
+        margin: 0px;
+        text-decoration: none !important;
+        padding-left: 0px;
+        display: flex;
+	    flex-direction: column;
+    }
+
+    #menu a:link, a:visited {
+        text-decoration: none;
+        color: #f2f2f2;
+
+    }
+    
+    #menu li.active{
+        background-color: #0C486F !important;
+    }
+    
+
+    #menu li:hover{
+        background-color: #112B48; 
+        color: #f2f2f2;
+
+    }
+
+    footer{
+        background-color: #23838E;
+        color: #f2f2f2;
+        font-size: 14px;
+        margin: 10px auto;
+        border: 1px solid #bbb;
+        box-shadow: 0 0 30px #777;
+        text-align: center;
+    }
+
+    .mapouter{
+        text-align:right;
+        height:500px;
+        width:100%;
+        }
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:100%;
+    }
+
+    .contact-info{
+        background-color: white;
+        padding: 5%;
+    }
+    .weather-summary{
+        background-color: white; 
+        padding: 5%;
+        position: relative;
+    }
+
+    .weather-summary figure{
+        margin: auto;
+    }
+    .weather-summary img{
+        width: 100%;
+    }
+    .weather-summary div{
+        background-color: rgba(17, 43, 72, 0.74);
+        margin: 5%; 
+        padding: 5%;
+        float: left;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        z-index: 1000;
+        color: #f2f2f2;
+        width: auto;
+    }
+
+    article{
+        background-color: #B78F7C;
+        border: #B78F7f;
+        border-style: solid;
+        padding: 5%;
+        margin: 10% 5%;
+    }
+
+    article h2{
+        color: #f2f2f2;
+    }
+    article img{
+        width: 100%;
+    }
+
+    .forecast{
+        display: none;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .forecast h2{
+        color: #0C486F;
+    }
+    .forecast table{
+        margin: auto;
+    }
+    .forecast th{
+        background-color: #b3dbf7;
+        color: #f2f2f2;
+        border: 1px solid #0C486F;
+        padding: 10px;
+    }
+    .forecast td {
+        border: 1px solid #0C486F;
+        padding: 10px;
+      }
+    .contact-info img{
+        width: 15%;
+    }
+
+    .contact-info div{
+        margin: auto;
+    }
+
+    #menu li:first-child { 
+        display: block;
+    }
+    #menu li { 
+        display: none;
+
+    }
+    #menu a {	
+        display: block;	
+        padding: .75rem;
+    }
+    
+    /* the onclick JS toggles the .repsonsive class from display none (#menu li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+	.responsive li { 
+        display: block !important; 
+    }
+
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        color: #777;
+        font: small-caption;
+        padding: 5%;
+    }
+    .grid-item img{
+        width: 100%;
+    }
+    .gallery-grid figure{
+        margin: 0;
+    }
+    .gallery-grid figure figcaption{
+        padding:3%;
+    }
+    
+    .grid-item{
+        box-shadow: 5px 5px 5px #eee;
+    }
+
+    .storm-form{
+        padding: 0 5%;
+        color: #f2f2f2;
+    }
+    .storm-form h1{
+        color: #f2f2f2;
+        font-size: 25px;
+    }
+    .storm-form form{
+        margin: 0 auto;
+        padding: 2% 5%;
+        border: 1px solid #777;
+        border-radius: 20px;
+        background: #0C486F;
+        max-width: 480px;
+    }
+    .storm-form form fieldset{
+        margin: 35px 0;
+        padding: 25px 10px;
+        border-radius: 5px;
+    }
+
+    .storm-form form fieldset legend{
+        font-size: 20px;
+        font-family: 'Raleway';
+    }
+
+
+    .storm-form form label{
+        display: block;
+    }
+    .storm-form form input, select, textarea{
+        display: block;
+        width: 95%;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .form-radio,  .storm-form form input[type=radio] {
+        display: inline !important;
+        width: auto;
+        padding: 10px;
+    }
+
+    .storm-form form input[type=range] {
+        -webkit-appearance: none;
+        width: 95%;
+        height: 25px;
+        background: #f2f2f2;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        padding: 0;
+        border-radius: 0;
+        display: inline;
+        }
+      
+    .storm-form form input[type=range]:hover {
+        opacity: 1;
+      }
+      .storm-form form input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #B78F7C;
+        cursor: pointer;
+      }
+      
+      .storm-form form input[type=range]::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #B78F7C;
+        cursor: pointer;
+      }
+      
+
+    .storm-form form input[type=submit] {
+        background-color:#B78F7C;
+        cursor:pointer;
+        padding: 8px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+        color: #f2f2f2;
+        width: 100%;
+    }
+    
+    .storm-form form input[type=submit]:hover {
+        background-color:rgba(183,143,124,0.8);
+    }
+
+    .thanks{
+        padding: 5%;
+        color: #777;
+        font-size: 20px;
+        text-align: center;
+    }

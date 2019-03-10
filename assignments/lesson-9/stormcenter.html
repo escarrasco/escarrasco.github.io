@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Rainbow Detector-The weather radar</title>
+      <meta name="description" content="Rainbow Detector-A weather site project has been serving the region for over 30 years.">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small-9.css">
+      <link rel="stylesheet" href="css/large-9.css">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <img src="images/rainbow-detector-logo2.png" alt="rainbow detector logo" />
+        <section class="headings">
+            <h1>Rainbow Detector</h1>
+            <div class="motto">
+                <h2>The weather information you need</h2>
+            </div>
+        </section>
+        
+    </header>      
+    <nav>
+        <ul id="menu">  
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9876; Menu</a></li>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="preston-9.html" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li class="active"><a href="#" title="Storm Center">Storm Center</a></li>
+            <li><a href="gallery-9.html" title="Gallery">Gallery</a></li>
+        </ul> 
+    </nav>
+    <main>
+        <h1>Storm Center</h1>
+                
+        <section class="storm-form">
+            <form method="GET" action="thanks.html">
+                    <h1>Report an Unusual Weather</h1>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        
+                        <label for="name">Full Name (required - 5 characters minimum):</label>
+                        <input type="text" name="name" id="name" pattern="[A-Za-z]{5,100}" required>
+        
+                        <label for="email">eMail:</label>
+                        <input type="email" name="email" id="email" placeholder="example@mail.com" size="10">
+        
+                        <label for="phone">Phone Number(required):</label>
+                        <input type="tel" name="phone" id="phone" required>
+        
+                        <label for="zip">ZIP code (required):</label>
+                        <input type="number" name="zip" id="zip" required>
+                    </fieldset>
+                    <fieldset>
+                            <legend>Storm Information</legend>
+                            
+                            <label for="storm-date">Storm Date:</label>
+                            <input type="date" name="storm-date" id="storm-date" min="2018-01-01" max="2020-01-01">
+            
+                            <label for="storm-type">Storm Type:</label>
+                            <input type="text" name="storm-type" id="storm-type" list="stormType">
+                            <datalist id="stormType">
+                                    <option value="Flash Flood">
+                                    <option value="Hail">
+                                    <option value="Hurricane">
+                                    <option value="Thunderstorm">
+                                    <option value="Tornado">
+                            </datalist>
+        
+                            <label for="storm-severity">Storm Severity (1 to 10):</label>
+                            <input type="range" name="storm-severity" id="storm-severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span><br>
+            
+                            <label for="storm-region">Storm Region:</label>
+                            <select id="storm-region"> 
+                                    <option value="" disabled selected>--Select Region--</option>
+                                    <option value="Preston">Preston</option>
+                                    <option value="Soda Springs">Soda Springs</option>
+                                    <option value="Fish Haven">Fish Haven</option>
+                            </select>
+        
+                            <label>Are you in danger?</label>
+                            <input type="radio" name="in-danger" value="Yes"><label class="form-radio">Yes</label>
+                            <input type="radio" name="in-danger" value="Maybe"><label class="form-radio">Maybe</label>
+                            <input type="radio" name="in-danger" value="No"><label class="form-radio">No</label>
+                    </fieldset>
+                    <fieldset>
+                            <legend>Additional Information</legend>
+                            
+                            <label for="comments">Comments:</label>
+                            <textarea name="comments" id="comments" rows="5"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
+        </section>
+        <section class="contact-info">
+                <div class="info">
+                    <h2>Contact Information</h2>
+                        <h4>Rainbow Detector</h4>
+                        <p>1020 Main Street </p>
+                        <p>999 999 9999</p>
+                        <p>info@rainbowdetector.com</p>        
+                        <a href="#"><img src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="#"><img src="images/twitter.png" alt="twitter icon"></a>
+                        <a href="#"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
+                </div>
+    
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="700" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=plaza%20principal%20santa%20cruz%20de%20la%20sierra&t=&z=13&ie=UTF8&iwloc=&output=embed" title="map"></iframe>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2019 &verbar;  Rainbow Detector  &verbar; Esther Carrasco </p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/range.js"></script>
+    <script>
+        window.onload = function() {
+           currentDate();
+        }
+    </script> 
+  </body>
+</html>
