@@ -336,6 +336,10 @@
         font-size: 20px;
         text-align: center;
     }
+
+    .town-grid h2{
+        display: none;
+    }
     .town-grid h4{
         font-style: italic;
     }
