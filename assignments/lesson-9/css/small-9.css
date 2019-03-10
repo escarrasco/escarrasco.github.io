@@ -334,6 +334,7 @@
     .town-grid h3{
         color: #B78F7C;
         font-size: 20px;
+        text-align: center;
     }
     .town-grid h4{
         font-style: italic;
