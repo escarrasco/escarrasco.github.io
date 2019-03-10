@@ -94,6 +94,9 @@
                 var population = document.createElement('p');
                 var rainFall = document.createElement('p');
                 var events = document.createElement('ul');
+                var picture = document.createElement('img');
+                picture.setAttribute('src', 'images/town' + i + '.jpg');
+                picture.setAttribute('alt', 'town picture');
 
                 name.textContent = towns[i].name;
                 name.textContent = towns[i].motto;
@@ -109,12 +112,15 @@
                     events.appendChild(listItem);
                 }
 
+                
+
                 myArticle.appendChild(name);
                 myArticle.appendChild(motto);
                 myArticle.appendChild(year);
                 myArticle.appendChild(population);
                 myArticle.appendChild(rainFall);
                 myArticle.appendChild(events);
+                myArticle.appendChild(picture);
 
                 section.appendChild(myArticle);
             }
