@@ -16,8 +16,8 @@ weatherRequest.onload =  function () {
 
 //weather forecast
 let forecastRequest = new XMLHttpRequest();
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=3e1293d42cb2e21f44dcaf91ba956f02';
-forecastRequest.open('Get',apiURLstring, true);
+let apiURLstring2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=3e1293d42cb2e21f44dcaf91ba956f02';
+forecastRequest.open('Get',apiURLstring2, true);
 forecastRequest.send();
 forecastRequest.onload =  function () {
     let forecastData = JSON.parse(forecastRequest.responseText);
