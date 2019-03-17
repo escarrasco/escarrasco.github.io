@@ -34,8 +34,8 @@ forecastRequest.onload =  function () {
         var date = forecastData.list[i].dt_txt;
         if(date.includes('18:00:00')){
             var temp = forecastData.list[i].main.temp;
-            var desc = forecastData.list[i].weather.description;
-            var icon = forecastData.list[i].weather.icon;
+            var desc = forecastData.list[i].weather[0].description;
+            var icon = forecastData.list[i].weather[0].icon;
 
             //date info 
             var dateF = new Date(forecastData.list[i].dt * 1000);
