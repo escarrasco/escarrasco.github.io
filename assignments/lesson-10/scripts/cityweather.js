@@ -35,7 +35,7 @@ forecastRequest.onload =  function () {
         if(date.includes('18:00:00')){
             var temp = forecastData.list[i].main.temp;
             var desc = forecastData.list[i].weather[0].description;
-            var icon = forecastData.list[i].weather[0].icon;
+            var icon =  "https://openweathermap.org/img/w/" + forecastData.list[i].weather[0].icon + ".png";
 
             //date info 
             var dateF = new Date(forecastData.list[i].dt * 1000);
