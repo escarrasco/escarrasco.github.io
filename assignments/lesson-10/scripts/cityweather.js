@@ -60,17 +60,17 @@ forecastRequest.onload =  function () {
     document.getElementById('temp3').innerHTML = tempArray[3];
     document.getElementById('temp4').innerHTML = tempArray[4];
     //imgs
-    document.getElementById('icon').setAttribute('src', iconArray[0]);
-    document.getElementById('icon').setAttribute('src', iconArray[1]);
-    document.getElementById('icon').setAttribute('src', iconArray[2]);
-    document.getElementById('icon').setAttribute('src', iconArray[3]);
-    document.getElementById('icon').setAttribute('src', iconArray[4]);
+    document.getElementById('icon0').setAttribute('src', iconArray[0]);
+    document.getElementById('icon1').setAttribute('src', iconArray[1]);
+    document.getElementById('icon2').setAttribute('src', iconArray[2]);
+    document.getElementById('icon3').setAttribute('src', iconArray[3]);
+    document.getElementById('icon4').setAttribute('src', iconArray[4]);
     //alts
-    document.getElementById('icon').setAttribute('alt', descArray[0]);
-    document.getElementById('icon').setAttribute('alt', descArray[1]);
-    document.getElementById('icon').setAttribute('alt', descArray[2]);
-    document.getElementById('icon').setAttribute('alt', descArray[3]);
-    document.getElementById('icon').setAttribute('alt', descArray[4]);
+    document.getElementById('icon0').setAttribute('alt', descArray[0]);
+    document.getElementById('icon1').setAttribute('alt', descArray[1]);
+    document.getElementById('icon2').setAttribute('alt', descArray[2]);
+    document.getElementById('icon3').setAttribute('alt', descArray[3]);
+    document.getElementById('icon4').setAttribute('alt', descArray[4]);
     
     
 }
