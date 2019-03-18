@@ -7,7 +7,8 @@ weatherRequest.onload =  function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
     document.getElementById('condition').innerHTML = weatherData.weather[0].description;
-    document.getElementById('temperature').innerHTML = weatherData.main.temp_max;
+    var highTemp = weatherData.main.temp_max;
+    document.getElementById('temperature').innerHTML = Math.round(highTemp);
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('speed').innerHTML = weatherData.wind.speed;
     
@@ -16,11 +17,11 @@ weatherRequest.onload =  function () {
 
 //weather forecast
 let forecastRequest = new XMLHttpRequest();
-let apiURLstring2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=3e1293d42cb2e21f44dcaf91ba956f02';
-forecastRequest.open('Get',apiURLstring2, true);
+apiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=3e1293d42cb2e21f44dcaf91ba956f02';
+forecastRequest.open('Get',apiURLstring, true);
 forecastRequest.send();
 forecastRequest.onload =  function () {
-    let forecastData = JSON.parse(forecastRequest.responseText);
+   forecastData = JSON.parse(forecastRequest.responseText);
     console.log(forecastData);
     var day = ['Sunday','Monday','Thuesday','Wednesday','Thursday','Friday','Saturday'];
     var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -29,14 +30,17 @@ forecastRequest.onload =  function () {
     var iconArray = [];
     var descArray = [];
 
-
-    for(var i = 0 ; i < forecastData.list.lenght ; i++){
-        var date = forecastData.list[i].dt_txt;
-        if(date.includes('18:00:00')){
-            var temp = forecastData.list[i].main.temp;
-            var desc = forecastData.list[i].weather[0].description;
-            var icon =  "https://openweathermap.org/img/w/" + forecastData.list[i].weather[0].icon + ".png";
-
+    datetim ='0'; temp ='0'; desc ='0'; icon = '0';
+    for( i = 0 ; i < forecastData.list.lenght ; i++){
+        
+        datetim = forecastData.list[i].dt_txt;
+        if(datetim.includes('18:00:00')){
+            temp = forecastData.list[i].main.temp;
+            var temp = Math.round(temp);
+            desc = forecastData.list[i].weather[0].description;
+            icon =  "https://openweathermap.org/img/w/" + forecastData.list[i].weather[0].icon + ".png";
+//05114d9b05fc90300235d8704185c770
+// mio 3e1293d42cb2e21f44dcaf91ba956f02
             //date info 
             var dateF = new Date(forecastData.list[i].dt * 1000);
             var dateText = day[dateF.getDay()] + ', ' + month[dateF.getMonth()] +' '+ dateF.getDate();
@@ -46,6 +50,7 @@ forecastRequest.onload =  function () {
             iconArray.push(icon);
             descArray.push(desc);
         }
+        continue;
     }
     //days
     document.getElementById('day0').innerHTML = dateArray[0];
@@ -71,6 +76,6 @@ forecastRequest.onload =  function () {
     document.getElementById('icon2').setAttribute('alt', descArray[2]);
     document.getElementById('icon3').setAttribute('alt', descArray[3]);
     document.getElementById('icon4').setAttribute('alt', descArray[4]);
+}   
     
-    
-}
+
