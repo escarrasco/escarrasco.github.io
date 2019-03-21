@@ -62,7 +62,8 @@ forecastRequest.onload =  function () {
     document.getElementById('temp2').innerHTML = tempArray[2];
     document.getElementById('temp3').innerHTML = tempArray[3];
     document.getElementById('temp4').innerHTML = tempArray[4];
-    //imgs
+    //imgs -
+
     document.getElementById('icon0').setAttribute('src', iconArray[0]);
     document.getElementById('icon1').setAttribute('src', iconArray[1]);
     document.getElementById('icon2').setAttribute('src', iconArray[2]);
