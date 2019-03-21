@@ -30,17 +30,15 @@ forecastRequest.onload =  function () {
     var iconArray = [];
     var descArray = [];
 
-    datetim ='0'; temp ='0'; desc ='0'; icon = '0';
-    for( i = 0 ; i < forecastData.list.lenght ; i++){
-        
+    for( i = 0 ; i < forecastData.list.length ; i++){
         datetim = forecastData.list[i].dt_txt;
         if(datetim.includes('18:00:00')){
             temp = forecastData.list[i].main.temp;
             var temp = Math.round(temp);
             desc = forecastData.list[i].weather[0].description;
             icon =  "https://openweathermap.org/img/w/" + forecastData.list[i].weather[0].icon + ".png";
-//05114d9b05fc90300235d8704185c770
-// mio 3e1293d42cb2e21f44dcaf91ba956f02
+            //05114d9b05fc90300235d8704185c770
+            // mio 3e1293d42cb2e21f44dcaf91ba956f02
             //date info 
             var dateF = new Date(forecastData.list[i].dt * 1000);
             var dateText = day[dateF.getDay()] + ', ' + month[dateF.getMonth()] +' '+ dateF.getDate();
