@@ -35,7 +35,7 @@
                         events.appendChild(listItem);
                     }
 
-                    myArticle.appendChild(picture);
+                   // myArticle.appendChild(picture);
                     myArticle.appendChild(name);
                     myArticle.appendChild(motto);
                     myArticle.appendChild(eventLabel);
