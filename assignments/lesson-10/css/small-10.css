@@ -355,12 +355,14 @@
 
     .town-events{
         background-image: url('https://images.pexels.com/photos/461832/pexels-photo-461832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1280&w=1920');
-        margin: 5% auto;
+        margin: 0;
     }
     .town-events article{
         background-color: rgba(255,255,255,0.6);
         color: #f2f2f2;
         text-align: center;
         border: none;
-        padding: 5% auto;
+        padding: 0 10px;
+        position: initial;
+
     }
