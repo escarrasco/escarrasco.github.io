@@ -57,7 +57,7 @@
         text-decoration: none !important;
         padding-left: 0px;
         display: flex;
-	    flex-direction: column;
+        flex-direction: column;
     }
 
     #menu a:link, a:visited {
@@ -367,4 +367,21 @@
         margin: 0;
         position: static;
 
+    }
+    .banner{
+        padding: 2% 5%;
+        position: relative;
+       
+    }
+
+    .banner img{
+        width: 100%;
+        box-shadow: 5px 5px 5px 0 rgb(3,3,3,0.3);
+    }
+    .banner h3{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        color: #eee;
+        font-size: 35px;
     }
