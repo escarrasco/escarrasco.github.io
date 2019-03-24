@@ -45,12 +45,13 @@
     .contact-info h2{
         color: #f2f2f2;
     }
-    
+
     .mapouter{
         padding: 5px 0;
     }
    div.info{
         padding: 0 20%;
+        text-align: left;
     }
 
 
