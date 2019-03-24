@@ -91,6 +91,7 @@
 
     .contact-info{
         background-color: #0C486F;
+        border: 1px solid #bbb;
         color: #f2f2f2;
         display: grid;
         grid-template-columns: 1fr;
