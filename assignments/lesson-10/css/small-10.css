@@ -35,14 +35,14 @@
         margin-top: 0px !important;
     }
 
-    h1{
+    h2{
         font-size: 30px;
         font-family: 'Raleway' , sans-serif;
         color: #0C486F;
         text-align: center;
     }
 
-    h2{
+    h3{
         font-size: 25px;
         font-family: 'Raleway' , sans-serif;
         color: #B78F7C;
@@ -85,11 +85,13 @@
         border: 1px solid #bbb;
         /*box-shadow: 0 0 30px #777;*/
         text-align: center;
+        padding: 0 5%;
     }
 
 
     .contact-info{
-        background-color: white;
+        background-color: #0C486F;
+        color: #f2f2f2;
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 20px;
@@ -97,10 +99,18 @@
         padding: 5px 5%;
         
     }
+    .info{
+        text-align: center;
+    }
+
+    #gmap_canvas{
+        width: 100%;
+    }
     .weather-summary{
         background-color: white; 
-        padding: 5%;
+        padding: 0 5%;
         position: relative;
+        margin: 0 0 40px 0;
     }
 
     .weather-summary figure{
@@ -108,11 +118,12 @@
     }
     .weather-summary img{
         width: 100%;
+        box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
     }
     .weather-summary div{
         background-color: rgba(17, 43, 72, 0.74);
-        margin: 5%; 
-        padding: 5%;
+        margin: 0 5%; 
+        padding: 0 5% 5% 5%;
         float: left;
         position: absolute;
         left: 5%;
@@ -127,11 +138,13 @@
         border: #B78F7f;
         border-style: solid;
         padding: 5%;
-        margin: 10% 5%;
+        margin: 5% 5%;
+        box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
     }
 
     article h2{
         color: #f2f2f2;
+        text-align: left;
     }
     article img{
         width: 100%;
@@ -139,8 +152,10 @@
 
     .forecast{
         display: none;
-        padding: 5%;
+        padding: 10px 0 3% 0;
+        margin: 5%;
         text-align: center;
+        box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
     }
 
     .forecast h2{
@@ -150,7 +165,8 @@
         margin: auto;
     }
     .forecast th{
-        background-color: #b3dbf7;
+        /*background-color: #b3dbf7;*/
+        background-color: #0C486F;
         color: #f2f2f2;
         border: 1px solid #0C486F;
         padding: 10px;
@@ -160,7 +176,12 @@
         padding: 10px;
       }
     .contact-info img{
-        width: 15%;
+        width: 10%;
+        padding: 5px 0;
+    }
+    .contact-info p img{
+        width: auto;
+        padding: 0;
     }
     .info p{
         margin: 0;
@@ -192,7 +213,7 @@
         row-gap: 20px;
         color: #777;
         font: small-caption;
-        padding: 5%;
+        padding: 0 5% 5% 5%;
     }
     .grid-item img{
         width: 100%;
@@ -209,7 +230,7 @@
     }
 
     .storm-form{
-        padding: 0 5%;
+        padding: 0 5% 5% 5%;
         color: #f2f2f2;
     }
     .storm-form h1{
@@ -349,7 +370,8 @@
     .town-events{
         padding: 5% 0;
         background-image: url('https://images.pexels.com/photos/461832/pexels-photo-461832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1280&w=1920');
-        margin: 0 5%;
+        margin: 0 5% 5% 5%;
+        box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
     }
     .town-events article{
         background-color: rgba(255,255,255,0.6);
@@ -369,7 +391,7 @@
 
     .banner img{
         width: 100%;
-        box-shadow: 5px 5px 5px 0 rgb(3,3,3,0.3);
+        box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
     }
     .banner h3{
         position: absolute;

@@ -40,17 +40,16 @@
     
     .contact-info{
         grid-template-columns: 1fr 1fr;      
-        background-color: #0C486F;
-        color: #f2f2f2;
     }
-    .contact-info img{
-        width: 5%;
-        padding-left: 5%;
-    }
+    
     .contact-info h2 h4 p{
         padding: 0 5%;
         width: 50%;
         color: #f2f2f2;
+    }
+
+    .mapouter{
+        padding: 5px 0;
     }
    div.info{
         padding: 0 20%;
@@ -60,10 +59,9 @@
     /*.gmap_canvas{
         height: 300px;
     }*/
-
     article{
         position: relative;
-        margin: 5% 5% 0 5%;
+        margin: 0 5% 5% 5%;
     }
     article img{
         width: 18%;

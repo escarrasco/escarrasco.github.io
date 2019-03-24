@@ -10,5 +10,8 @@
         left: 23%;
         font-size: 45px;
     }
-    
+    .weather-summary{
+        margin: 0;
+    }
+
 }
