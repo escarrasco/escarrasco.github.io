@@ -1,0 +1,17 @@
+@media screen and (min-width: 481px) and
+    (max-width: 720px) {
+
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner h3{
+        top: 25%;
+        left: 23%;
+        font-size: 45px;
+    }
+    .weather-summary{
+        margin: 0;
+    }
+
+}

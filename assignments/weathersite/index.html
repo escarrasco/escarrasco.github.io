@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Home Page &verbar; Rainbow Detector</title>
+      <meta name="description" content="Rainbow Detector-A weather site project has been serving the region for over 30 years.">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small-10.css">
+      <link rel="stylesheet" href="css/medium-10.css">
+      <link rel="stylesheet" href="css/large-10.css">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+     
+  </head>
+  <body>
+    <header>
+        <img src="images/rainbow-detector-logo2.png" alt="rainbow detector logo">
+        <section class="headings">
+            <h1>Rainbow Detector</h1>
+            <div class="motto">
+                <h2>The weather information you need</h2>
+            </div>
+        </section>
+        
+    </header>      
+    <nav>
+        <ul id="menu">  
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="active"><a href="#" title="Home">Home</a></li>
+            <li><a href="preston-10.html" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+            <li><a href="gallery-10.html" title="Gallery">Gallery</a></li>
+        </ul> 
+    </nav>
+    <main>
+        <!-- <h2>Welcome</h2>        -->
+        <section class="banner">
+            <img src="images/nature-banner.jpg" alt="Nature - Photo by sohail na from Pexels">
+            <h3>Weather on time</h3>
+        </section>
+        <section class="town-grid">
+            <h2>Welcome</h2>
+        </section>
+        <section class="contact-info">
+            <div class="info">
+                <h2>Contact Information</h2>
+                    <p>Rainbow Detector</p>
+                    <p><img src="images/placeholder.png" alt="location icon"> 1020 Main Street</p>
+                    <p><img src="images/smartphone-call.png" alt="phone icon"> (999) 999 9999</p>
+                    <p><img src="images/envelope.png" alt="mail icon"> info@rainbowdetector.com</p>        
+                    <a href="#"><img src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="#"><img src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
+            </div>
+
+            <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=plaza%20principal%20santa%20cruz%20de%20la%20sierra&t=&z=13&ie=UTF8&iwloc=&output=embed" title="map"></iframe>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2019 &verbar;  Rainbow Detector  &verbar; Esther Carrasco  &verbar; Weather retrived from <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script>
+        window.onload = function() {
+           currentDate();
+        }
+
+        var section = document.querySelector('.town-grid');
+        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function() {
+            var townsData = request.response;
+            showTowns(townsData);
+        }
+
+        function showTowns(jsonObj) {
+            var towns = jsonObj['towns'];
+                
+            for (var i = 0; i < towns.length; i++) {
+                if(towns[i].name == 'Preston' || towns[i].name == 'Soda Springs' || towns[i].name == 'Fish Haven'){
+                    var myArticle = document.createElement('article');
+                    var name = document.createElement('h3');
+                    var motto = document.createElement('h4');
+                    var year = document.createElement('p');
+                    var population = document.createElement('p');
+                    var rainFall = document.createElement('p');
+                    var  eventLabel = document.createElement('p');
+                    var events = document.createElement('ul');
+                    var picture = document.createElement('img');
+                    picture.setAttribute('src', 'images/town' + i + '.jpeg');
+                    picture.setAttribute('alt', 'town picture');
+
+                    name.textContent = towns[i].name;
+                    motto.textContent = towns[i].motto;
+                    year.textContent = 'Year Founded: ' + towns[i].yearFounded;
+                    population.textContent = 'Current Population: ' + towns[i].currentPopulation;
+                    rainFall.textContent = 'Average Rain Fall: ' + towns[i].averageRainFall;
+                    eventLabel.textContent = 'Events: ';
+                    
+                    var eventsObj = towns[i].events;
+                    for (var j = 0; j < eventsObj.length; j++) {
+                        var listItem = document.createElement('li');
+                        listItem.textContent = eventsObj[j];
+                        events.appendChild(listItem);
+                    }
+
+                    
+
+                    myArticle.appendChild(name);
+                    myArticle.appendChild(motto);
+                    myArticle.appendChild(year);
+                    myArticle.appendChild(population);
+                    myArticle.appendChild(rainFall);
+                    myArticle.appendChild(eventLabel);
+                    myArticle.appendChild(events);
+                    myArticle.appendChild(picture);
+
+                    section.appendChild(myArticle);
+                }
+                
+            }
+        }
+        </script> 
+  </body>
+</html>
