@@ -13,7 +13,11 @@
     .weather-summary{
         margin: 0;
     }
+    .contact-info{
+        grid-template-columns: 1fr 1fr;      
+    }
     .info {
+        
         text-align: left;
     }
 
