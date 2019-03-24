@@ -12,21 +12,27 @@
 
         function showTowns(jsonObj) {
             var towns = jsonObj['towns'];
-                
-            for (var i = 0; i < towns.length; i++) {
-                if(towns[i].name == 'Preston'){
-                    var myArticle = document.createElement('article');
-                    var name = document.createElement('h3');
-                    var motto = document.createElement('h4');
-                    var  eventLabel = document.createElement('p');
-                    var events = document.createElement('ul');
-                    var picture = document.createElement('img');
-                    picture.setAttribute('src', 'images/town' + i + '.jpeg');
-                    picture.setAttribute('alt', 'town picture');
+            var isPreston = document.getElementById("preston");
+            var isFish = document.getElementById("fish-haven");
+            var isSoda = document.getElementById("soda-springs");
+            var cityName = '';
+            if(isPreston != null){
+                cityName = 'Preston';
+            }
+            if(isFish != null){
+                cityName = 'Fish Haven';
+            }
+            if(isSoda != null){
+                cityName = 'Soda Springs';
+            }
 
-                    name.textContent = towns[i].name;
-                    motto.textContent = towns[i].motto;
-                    eventLabel.textContent = 'Events: ';
+            for (var i = 0; i < towns.length; i++) {
+                if(towns[i].name == cityName){
+                    var myArticle = document.createElement('article');
+                    var eventLabel = document.createElement('h3');
+                    var events = document.createElement('ul');
+                    
+                    eventLabel.textContent = 'Upcoming Events in'+ towns[i].name +': ';
                     
                     var eventsObj = towns[i].events;
                     for (var j = 0; j < eventsObj.length; j++) {

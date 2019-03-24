@@ -377,7 +377,7 @@
         box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
     }
     .town-events article{
-        background-color: rgba(255,255,255,0.6);
+        background-color: rgba(255,255,255,0.8);
         color: #112B48;
         text-align: center;
         border: none;
@@ -386,6 +386,11 @@
         position: static;
 
     }
+
+    .town-events article ul{
+        list-style-type: none;
+    }
+
     .banner{
         padding: 2% 5%;
         position: relative;

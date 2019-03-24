@@ -1,6 +1,25 @@
+//what city is?
+var isPreston = document.getElementById("preston");
+var isFish = document.getElementById("fish-haven");
+var isSoda = document.getElementById("soda-springs");
+var cityName = '';
+var cityCode = '';
+if(isPreston != null){
+    cityName = 'Preston';
+    cityCode = '5604473';
+}
+if(isFish != null){
+    cityName = 'Fish Haven';
+    cityCode = '5585010';
+}
+if(isSoda != null){
+    cityName = 'Soda Springs';
+    cityCode = '5607916'
+}
+
 //weather summary
 let weatherRequest = new XMLHttpRequest();
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=3e1293d42cb2e21f44dcaf91ba956f02';
+let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityCode + '&units=imperial&APPID=3e1293d42cb2e21f44dcaf91ba956f02';
 weatherRequest.open('Get',apiURLstring, true);
 weatherRequest.send();
 weatherRequest.onload =  function () {
@@ -17,7 +36,7 @@ weatherRequest.onload =  function () {
 
 //weather forecast
 let forecastRequest = new XMLHttpRequest();
-apiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=3e1293d42cb2e21f44dcaf91ba956f02';
+apiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id='+ cityCode + '&units=imperial&APPID=3e1293d42cb2e21f44dcaf91ba956f02';
 forecastRequest.open('Get',apiURLstring, true);
 forecastRequest.send();
 forecastRequest.onload =  function () {
