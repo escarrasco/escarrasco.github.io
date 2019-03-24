@@ -38,6 +38,11 @@
         border-right: none;
     }
     
+    .contact-info{
+        grid-template-columns: 1fr 1fr;      
+        background-color: #0C486F;
+        color: #f2f2f2;
+    }
     .contact-info img{
         width: 5%;
         padding-left: 5%;
@@ -45,21 +50,16 @@
     .contact-info h2 h4 p{
         padding: 0 5%;
         width: 50%;
+        color: #f2f2f2;
     }
    div.info{
-        display: inline-block;
-        vertical-align: top;
-        width: 50%;
+        padding: 0 20%;
     }
 
-    .mapouter{
-        display: inline-block;
-        width: 40%;
-    }
 
-    .gmap_canvas{
+    /*.gmap_canvas{
         height: 300px;
-    }
+    }*/
 
     article{
         position: relative;

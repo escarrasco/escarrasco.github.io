@@ -81,27 +81,21 @@
         background-color: #23838E;
         color: #f2f2f2;
         font-size: 14px;
-        margin: 10px auto;
+        /*margin: 10px auto;*/
         border: 1px solid #bbb;
-        box-shadow: 0 0 30px #777;
+        /*box-shadow: 0 0 30px #777;*/
         text-align: center;
     }
 
-    .mapouter{
-        text-align:right;
-        height:500px;
-        width:100%;
-        }
-    .gmap_canvas {
-        overflow:hidden;
-        background:none!important;
-        height:500px;
-        width:100%;
-    }
 
     .contact-info{
         background-color: white;
-        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 5px 5%;
+        
     }
     .weather-summary{
         background-color: white; 
@@ -168,9 +162,8 @@
     .contact-info img{
         width: 15%;
     }
-
-    .contact-info div{
-        margin: auto;
+    .info p{
+        margin: 0;
     }
 
     #menu li:first-child { 
