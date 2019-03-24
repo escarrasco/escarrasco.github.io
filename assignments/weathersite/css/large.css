@@ -42,7 +42,7 @@
         grid-template-columns: 1fr 1fr;      
     }
     
-    .contact-info h2 h4 p{
+    .contact-info h2{
         padding: 0 5%;
         width: 50%;
         color: #f2f2f2;
