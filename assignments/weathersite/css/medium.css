@@ -13,5 +13,8 @@
     .weather-summary{
         margin: 0;
     }
+    .info {
+        text-align: left;
+    }
 
 }
