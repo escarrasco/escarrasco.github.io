@@ -32,7 +32,7 @@
                     var eventLabel = document.createElement('h3');
                     var events = document.createElement('ul');
                     
-                    eventLabel.textContent = 'Upcoming Events in'+ towns[i].name +': ';
+                    eventLabel.textContent = 'Upcoming Events in '+ towns[i].name +': ';
                     
                     var eventsObj = towns[i].events;
                     for (var j = 0; j < eventsObj.length; j++) {
