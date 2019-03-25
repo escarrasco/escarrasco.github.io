@@ -6,7 +6,6 @@
     header {
         margin: 10px 0px auto auto;
         background-color: #112B48;
-        border: 1px solid #bbb;
         box-shadow: 0 0 30px #777;
         text-align: center;
         color: #f2f2f2 !important;
@@ -82,7 +81,7 @@
         color: #f2f2f2;
         font-size: 14px;
         /*margin: 10px auto;*/
-        border: 1px solid #bbb;
+        border: 1px solid #23838E;
         /*box-shadow: 0 0 30px #777;*/
         text-align: center;
         padding: 0 5%;
@@ -91,7 +90,6 @@
 
     .contact-info{
         background-color: #0C486F;
-        border: 1px solid #bbb;
         color: #f2f2f2;
         display: grid;
         grid-template-columns: 1fr;

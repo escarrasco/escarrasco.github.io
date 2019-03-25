@@ -30,6 +30,7 @@ weatherRequest.onload =  function () {
     document.getElementById('temperature').innerHTML = Math.round(highTemp);
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('speed').innerHTML = weatherData.wind.speed;
+    document.getElementById('wind').innerHTML = weatherData.wind.deg;
     
     
 }
