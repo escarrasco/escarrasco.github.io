@@ -12,8 +12,10 @@
     
     #menu li {
         border-right:1px solid #f2f2f2;
-        display: inline;
+        /*display: inline;*/
         padding: 0 10px;
+        display: block; 
+        flex: 1 1 auto;
     }
     
     #menu li:last-child {
@@ -71,9 +73,9 @@
         display: none;
     }
     
-    #menu a {
+    /*#menu a {
         display: inline-block;
-    }
+    }*/
 
     .gallery-grid{
         grid-template-columns: 1fr 1fr 1fr;
