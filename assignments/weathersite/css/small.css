@@ -110,7 +110,7 @@
         background-color: white; 
         padding: 0 5%;
         position: relative;
-        margin: 0 0 10% 0;
+        margin: 0 0 15% 0;
     }
 
     .weather-summary figure{
@@ -150,6 +150,7 @@
         width: 100%;
         box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
         padding: 2%;
+        margin-top: 6%;
     }
 
     .forecast{
