@@ -120,7 +120,7 @@
     .weather-summary div{
         background-color: rgba(17, 43, 72, 0.74);
         margin: 0 5%; 
-        padding: 0 5% 5% 5%;
+        padding: 0 5% 2% 5%;
         float: left;
         position: absolute;
         left: 5%;

@@ -101,7 +101,7 @@ forecastRequest.onload =  function () {
     
 
 function getDirection(windDegree) {
-    var directions = ['North', 'North-West', 'West', 'South-West', 'South', 'South-East', 'East', 'North-East'];
+    var directions = ['N', 'NW', 'W', 'SW', 'S', 'SE', 'E', 'NE'];
     var d = Math.round(((windDegree %= 360) < 0 ? windDegree + 360 : windDegree) / 45) % 8;
     return directions[d];
 }
