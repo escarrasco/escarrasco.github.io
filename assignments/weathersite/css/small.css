@@ -394,7 +394,10 @@
     .town-events article ul{
         list-style-type: none;
     }
-
+    .town-events article h2{
+        color: #B78F7C;
+        text-align: center;
+    }
     .banner{
         padding: 2% 5%;
         position: relative;
