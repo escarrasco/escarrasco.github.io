@@ -2,7 +2,6 @@
     (max-width: 720px) {
 
     .gallery-grid{
-        display: grid;
         grid-template-columns: 1fr 1fr;
     }
     .banner h3{

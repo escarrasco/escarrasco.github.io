@@ -3,15 +3,8 @@
         display: block;
     }
     #menu {
-        list-style-type: none;
         padding: 0;
         overflow: hidden;
-        color: #f2f2f2;
-        list-style-type: none;
-        text-align: center;
-        margin: 0px;
-        text-decoration: none !important;
-        padding-left: 0px;
         flex-direction: row;
         justify-content: center;
         
@@ -22,25 +15,14 @@
         display: inline;
         padding: 0 10px;
     }
-
-    #menu li.active{
-        background-color: #0C486F !important;
-
-    }
-
-    #menu li:hover{
-        background-color: #112B48; 
-        color: #f2f2f2;
-
-    }
     
     #menu li:last-child {
         border-right: none;
     }
     
-    .contact-info{
+    /*.contact-info{
         grid-template-columns: 1fr 1fr;      
-    }
+    }*/
     
     .contact-info h2{
         text-align: left;
@@ -49,7 +31,7 @@
     .mapouter{
         padding: 5px 0;
     }
-   div.info{
+    div.info{
         padding: 0 20%;
         text-align: left;
     }
@@ -94,7 +76,6 @@
     }
 
     .gallery-grid{
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .grid-item:hover {
@@ -110,7 +91,6 @@
 
 
     .town-grid{
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .town-grid article:hover {
