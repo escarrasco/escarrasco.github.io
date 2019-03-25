@@ -139,7 +139,7 @@
         background-color: #B78F7C;
         border: #B78F7f;
         border-style: solid;
-        padding: 5%;
+        padding: 0 5% 3% 5%;
         margin: 5% 5%;
         box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
     }
