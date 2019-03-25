@@ -19,7 +19,9 @@
     #menu li:last-child {
         border-right: none;
     }
-    
+    .weather-summary {
+        margin: 0;
+    }
     .contact-info{
         grid-template-columns: 1fr 1fr;      
     }
