@@ -47,6 +47,7 @@
         font-size: 25px;
         font-family: 'Raleway' , sans-serif;
         color: #B78F7C;
+        margin-bottom: 10px;
     }
 
     #menu{
@@ -109,7 +110,7 @@
         background-color: white; 
         padding: 0 5%;
         position: relative;
-        margin: 0 0 40px 0;
+        margin: 0 0 10% 0;
     }
 
     .weather-summary figure{
@@ -147,6 +148,8 @@
     }
     article img{
         width: 100%;
+        box-shadow: 0 5px 5px 0 rgb(3,3,3,0.3), 0 7px 12px 0 rgb(3,3,3,0.3);
+        padding: 2%;
     }
 
     .forecast{
