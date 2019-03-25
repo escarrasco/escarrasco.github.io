@@ -25,13 +25,15 @@ weatherRequest.send();
 weatherRequest.onload =  function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
-    document.getElementById('condition').innerHTML = weatherData.weather[0].description;
     var highTemp = weatherData.main.temp_max;
+    var windDir =  weatherData.wind.deg;
+    
+    document.getElementById('condition').innerHTML = weatherData.weather[0].description;
+    
     document.getElementById('temperature').innerHTML = Math.round(highTemp);
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('speed').innerHTML = weatherData.wind.speed;
-    document.getElementById('wind').innerHTML = weatherData.wind.deg;
-    
+    document.getElementById('wind').innerHTML = Math.round(windDir) + '&deg;' + getDirection(windDir);
     
 }
 
@@ -98,3 +100,8 @@ forecastRequest.onload =  function () {
 }   
     
 
+function getDirection(windDegree) {
+    var directions = ['North', 'North-West', 'West', 'South-West', 'South', 'South-East', 'East', 'North-East'];
+    var d = Math.round(((angle %= 360) < 0 ? angle + 360 : angle) / 45) % 8;
+    return directions[d];
+}
