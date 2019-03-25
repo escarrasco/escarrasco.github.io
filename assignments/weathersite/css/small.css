@@ -394,6 +394,9 @@
     .town-events article ul{
         list-style-type: none;
     }
+    .town-events h2{
+        display: none;
+    }
     .town-events article h2{
         color: #B78F7C;
         text-align: center;

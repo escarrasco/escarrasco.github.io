@@ -29,7 +29,7 @@
             for (var i = 0; i < towns.length; i++) {
                 if(towns[i].name == cityName){
                     var myArticle = document.createElement('article');
-                    var eventLabel = document.createElement('h2');
+                    var eventLabel = document.createElement('h3');
                     var events = document.createElement('ul');
                     
                     eventLabel.textContent = 'Upcoming Events in '+ towns[i].name +': ';
