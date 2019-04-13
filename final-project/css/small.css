@@ -441,7 +441,7 @@
       }
 
     .sub-menu a:link, .sub-menu a:visited{
-        color: #7A2626;
+        color: #7A2626 !important;
       }
     .sub-menu a:hover{
         background-color: #ADCCCB;
