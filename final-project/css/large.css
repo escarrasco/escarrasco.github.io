@@ -177,17 +177,14 @@
         width: 0;
         border-top: 200px solid transparent;
         border-bottom: 200px solid transparent;
-        border-right: 40px solid #ADCCCB;
+        border-right:30px solid #ADCCCB;
       }
     .info-grid{
         grid-template-columns: 1fr 40px 1fr;
         column-gap: 0px;
         
     }
-    .color-item{
-        background: #ADCCCB;
-        color: #f8f8f8;
-    }
+
 }
 
 

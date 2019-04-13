@@ -532,10 +532,18 @@ svg#bigTriangleColor2 {
     color: #f8f8f8;
 }
 
+.color-item p {
+    margin: 0;
+}
+.info-grid h4 {
+    margin: 5px 0;
+}
 .info-grid article, .info-grid div{
     padding: 3% 10%;
 }
 .arrow-right,.arrow-left {
     display: none;
-  }
+}
+
+.
  
