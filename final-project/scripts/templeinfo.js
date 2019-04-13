@@ -185,6 +185,10 @@ function showData(jsonObj) {
         }
 
     }
+    contact.classList.toggle("color-item");
+    closure.classList.toggle("color-item");
+    additional.classList.toggle("color-item");
+	
     section.appendChild(contact);
     section.appendChild(ordinances);
     section.appendChild(sessions);
