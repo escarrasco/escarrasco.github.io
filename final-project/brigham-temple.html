@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <title>Reception &verbar; Temple Inn & Suites</title>
+      <title>Brigham Temple &verbar; Temple Inn & Suites</title>
       <meta name="author" content="Esther Carrasco | CIT 230 BYU-Idaho">
       <meta name="description" content="Temple Inn & Suites - A hotel chain that  manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
       <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
@@ -25,12 +25,12 @@
         <ul id="menu">  
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html" title="Home">Home</a></li>
-            <li  class="hover-menu" ><a href="#" title="Temple" onclick="subMenu(0)">Temple &#9660;</a>
+            <li  class="active hover-menu" ><a href="#" title="Temple" onclick="subMenu(0)">Temple &#9660;</a>
                 <div class="sub-menu">
                         <p class="close-menu" onclick="subMenu(0)">&#9747;</p>
                         <a href="temple.html">Temple Overview</a>
                         <a href="salt-lake-temple.html">Salt Lake Temple</a>
-                        <a href="brigham-temple.html">Brigham City Utah Temple</a>
+                        <a class="active" href="brigham-temple.html">Brigham City Utah Temple</a>
                         <a href="washington-temple.html">Washington D.C. Temple</a>
                         <a href="portland-temple.html">Portland Oregon Temple</a>
                         <a href="cochabamba-temple.html">Cochabamba Bolivia Temple</a>
@@ -46,7 +46,7 @@
                     <a href="full-time-temple-missionary.html">Temple Missionary Services</a>
                 </div>
             </li>
-            <li class=" active"><a href="contactus.html" title="Contact Us">Contact Us</a></li>
+            <li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
         </ul>
         <a href="index.html" title="Home">
                 
@@ -55,9 +55,43 @@
         </a> 
     </nav>
     <main>
-        <section class="thanks">
-            <h2>Contact Us</h2>
-            <p>Thanks! We have received you message. We will get back to you at the earliest</p>
+            <section class="banner">
+                    <img src="images/brigham-temple.jpg" alt="Brigham Temple">
+                    <div>
+                         <h2>Brigham City Temple</h2>
+                    </div>                    
+                 </section> 
+        <section class="info-grid" id="brigham">
+
+        </section>
+        <section class="banner temple-weather">
+                <img src="images/salt-lake-temple-square.jpg" alt="temple square">
+                <div>
+                        <h2>Brigham City Current Weather</h2>
+                        <table>
+                            <tr>
+                                <td>Currently:</td>
+                                <td><span id="condition"></span></td>
+                            </tr>
+                            <tr>
+                                <td>High:</td>
+                                <td><span id="temperature"></span>&#8457;</td>
+                            </tr>
+                            <tr>
+                                <td>Humidity:</td>
+                                <td><span id="humidity"></span>&percnt;</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Speed:</td>
+                                <td><span id="speed"></span>mph</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Direction:</td>
+                                <td><span id="wind"></span></td>
+                            </tr>
+                        </table>
+                </div>
+                
         </section>
 
         <section class="contact-info">
@@ -85,6 +119,8 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/templeinfo.js"></script>
+    <script src="scripts/templeweather.js"></script>
     <script>
         window.onload = function() {
            currentDate();
