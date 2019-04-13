@@ -24,7 +24,7 @@ if(isCochabamba != null){
 }
 
 var section = document.querySelector('.info-grid');
-var requestURL = 'temples.json';
+var requestURL = 'scripts/temples.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
