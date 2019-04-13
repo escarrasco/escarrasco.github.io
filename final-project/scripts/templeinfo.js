@@ -31,10 +31,14 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-    var templeData = request.response;
+    var templeData = JSON.parse(request.responseText);
     showData(templeData);
 }
 
+/*
+var templeData = JSON.parse(temples);
+showData(templeData);
+*/
 function showData(jsonObj) {
     var temples = jsonObj['temples'];
     console.log(temples);
