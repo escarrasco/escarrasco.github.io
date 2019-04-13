@@ -8,7 +8,7 @@ var isCochabamba = document.getElementById("cochabamba");
 var templeName = '';
 
 if(isSaltLake != null){
-    templeName = 'Salt Lake Temple5780993';
+    templeName = 'Salt Lake Temple';
 }
 if(isBrigham != null){
     templeName = 'Brigham City Utah Temple';
