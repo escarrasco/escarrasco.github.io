@@ -131,6 +131,8 @@ function showData(jsonObj) {
                 ordA.appendChild(ordNote);
                 ordA.appendChild(ordSch);
             }
+            ordinances.appendChild(ordH);
+            ordinances.appendChild(ordA);
 
 
             //sessions
