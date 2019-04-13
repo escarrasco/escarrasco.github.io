@@ -120,10 +120,10 @@ function showData(jsonObj) {
                 ordName.textContent = ordObj[j].name;
                 ordNote.textContent = ordObj[j].note;
                 
-                var ordSsObj = ordObj[i].schedule;
-                for (var j = 0; j < ordSsObj.length; j++) {
+                var ordSsObj = ordObj[j].schedule;
+                for (var k = 0; k < ordSsObj.length; k++) {
                     var listItem = document.createElement('li');
-                    listItem.textContent = ordSsObj[j];
+                    listItem.textContent = ordSsObj[k];
                     ordSch.appendChild(listItem);
                 }
 
