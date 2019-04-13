@@ -66,10 +66,7 @@ function showData(jsonObj) {
             var  servU = document.createElement('ul');
 
             var  ordH = document.createElement('h3');
-            var  ordName = document.createElement('h4');
-            var ordNote = document.createElement('i');
-            var  ordSch = document.createElement('ul');
-
+            
 
             var  sessH = document.createElement('h3');
             var  sessU = document.createElement('ul');
@@ -79,8 +76,6 @@ function showData(jsonObj) {
             var  addH4 = document.createElement('h4');
             var  addP = document.createElement('p');
             var  milH = document.createElement('h3');
-            var  mildate = document.createElement('p');
-            var  milevent = document.createElement('p');
            
             //temple contact information 
             address.textContent = "Address";
@@ -117,6 +112,10 @@ function showData(jsonObj) {
             var ordObj = temples[i].ordinance;
             for (var j = 0; j < ordObj.length; j++) {
                 var ordA = document.createElement('article');
+                var  ordName = document.createElement('h4');
+                var ordNote = document.createElement('i');
+                var  ordSch = document.createElement('ul');
+
                 ordName.textContent = ordObj[j].name;
                 ordNote.textContent = ordObj[j].note;
                 
@@ -175,7 +174,9 @@ function showData(jsonObj) {
             milestones.appendChild(milH);
 
             var milObj = temples[i].milestones;
-            for (var j = 0; j < milObj.length; j++) {
+            for (var j = 0; j < milObj.length; j++) {                
+                var  mildate = document.createElement('p');
+                var  milevent = document.createElement('p');
                 mildate.textContent = milObj[j].date;
                 milevent.textContent = milObj[j].event;
                 milestones.appendChild(mildate);
