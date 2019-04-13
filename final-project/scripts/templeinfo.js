@@ -112,7 +112,8 @@ function showData(jsonObj) {
 
             //ordinances
             ordH.textContent = 'Ordinances Schedule';
-            
+            ordinances.appendChild(ordH);
+
             var ordObj = temples[i].ordinance;
             for (var j = 0; j < ordObj.length; j++) {
                 var ordA = document.createElement('article');
@@ -130,9 +131,10 @@ function showData(jsonObj) {
                 ordA.appendChild(ordName);
                 ordA.appendChild(ordNote);
                 ordA.appendChild(ordSch);
+                ordinances.appendChild(ordA);
             }
-            ordinances.appendChild(ordH);
-            ordinances.appendChild(ordA);
+            
+            
 
 
             //sessions
