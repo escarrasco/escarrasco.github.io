@@ -49,7 +49,10 @@ function showData(jsonObj) {
     var additional = document.createElement('article');
     var milestones = document.createElement('article');
 
+    console.log(templeName);
+
     for (var i = 0; i < temples.length; i++) {
+        console.log('enter loop');
         if(temples[i].name == templeName){
             var address = document.createElement('h4');
             var lineadd1 = document.createElement('p');
