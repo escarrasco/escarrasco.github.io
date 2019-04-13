@@ -98,7 +98,18 @@
             </div>
                 
         </section>
-
+        <section class="temple-slide">
+            <div id='portland'>
+                <img src="images/portland-temple.jpg" alt="Portland Temple Photo by https://www.ldstemple.pic">
+                <a href="javascript:moveRight()" class="slide-left">&#10096;</a>
+                <a href="javascript:moveRight()" class="slide-right">&#10097;</a>
+            </div>
+            <div id='brigham'>
+                    <img src="images/brigham-temple.jpg" alt="Brigham Temple Photo by https://www.ldstemple.pic">
+                    <a href="javascript:moveRight()" class="slide-left">&#10096;</a>
+                    <a href="javascript:moveRight()" class="slide-right">&#10097;</a>
+            </div>
+        </section>
         <section class="contact-info">
             <div class="info">
                 <h3>Contact Information</h3>
@@ -127,6 +138,25 @@
     <script>
         window.onload = function() {
            currentDate();
+        }
+
+        function moveRight(){
+            console.log('entro move');
+            slide = document.getElementById("portland").style.display;
+	        
+	        if (slide ==='none'){
+                console.log(' portland none'+ slide);
+
+                document.getElementById("portland").style.display = "block";
+                document.getElementById("brigham").style.display = "none";
+
+            }else{
+                console.log('porlant block');
+                
+                document.getElementById("portland").style.display = "none";
+                document.getElementById("brigham").style.display = "block";
+
+            }
         }
        </script> 
   </body>

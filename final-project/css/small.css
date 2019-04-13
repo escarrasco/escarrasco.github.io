@@ -549,5 +549,36 @@ svg#bigTriangleColor2 {
     display: none;
 }
 
-.
+.temple-slide{
+    padding: 2% 5%;
+    position: relative; 
+    margin-top: 10%;
+}
+.temple-slide img{
+    width: 100%
+}
+
+#brigham{
+    display: none;
+}
+#portland{
+    display: block;
+}
+
+.slide-right, .slide-left{
+    text-decoration: none;
+    color: #f8f8f8;
+    background-color: #5A5444;
+    padding: 10px 30px;
+    font-size: 50px;
+    position: absolute;
+    top:50%
+}
+.slide-left{
+    left: 3%;
+
+}
+.slide-right{
+    right: 3%;
+}
  
