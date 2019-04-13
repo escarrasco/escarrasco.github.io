@@ -31,7 +31,7 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-    var templeData = JSON.parse(request.responseText);
+    var templeData = request.responseText;
     showData(templeData);
 }
 
