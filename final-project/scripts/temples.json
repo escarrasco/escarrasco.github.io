@@ -1,9 +1,351 @@
 {
     "temples":[
-        {"name":"Salt Lake Temple"},
-        {"name":"Brigham City Utah Temple"},
-        {"name":"Washington D.C. Temple"},
-        {"name":"Portland Oregon Temple"},
-        {"name":"Cochabamba Bolivia Temple"}
+        {
+            "name":"Salt Lake Temple",
+            "address1":"50 W North Temple St",
+            "address2":"Salt Lake City UT 84150-9709",
+            "country":"United States",
+            "telephone":"(1) 801-240-2640",
+            "email":"slake-off@ldschurch.org",
+            "services":[
+                        "Clothing rental available",
+                        "Cafeteria available",
+                        "No patron housing available",
+                        "Distribution center nearby"
+                        ],
+            "ordinance":[
+                            {
+                                "name":"Baptistry Schedule",
+                                "note":"For group appointments, please call the temple at: (1) 801-240-2640",
+                                "schedule":[
+                                            "5:00 AM - 5:00 PM       Walk-ins and Appointments",
+                                            "6:00 PM - 7:00 PM       Walk-ins and Appointments"
+                                            ]
+                            },
+                            {
+                                "name":"Initiatory Schedule",
+                                "note":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 801-240-2640",
+                                "schedule":["6:00 AM - 8:00 PM      Walk-ins Only"]
+                            },
+                            {
+                                "name":"Sealing Schedule",
+                                "note":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 801-240-2640",
+                                "schedule":["7:00 AM - 8:00 PM      Walk-ins and Appointments"]
+                            }
+            ],
+            "session":[
+                        "6:00 AM     Walk-ins Only",
+                        "7:00 AM     Walk-ins Only",
+                        "8:00 AM     Walk-ins Only",
+                        "9:00 AM     Walk-ins and Appointments",
+                        "10:00 AM    Walk-ins Only",
+                        "11:00 AM    Walk-ins Only",
+                        "12:00 PM    Walk-ins Only",
+                        "1:00 PM     Walk-ins and Appointments",
+                        "2:00 PM     Walk-ins Only",
+                        "3:00 PM     Walk-ins Only",
+                        "4:00 PM     Walk-ins Only",
+                        "5:00 PM     Walk-ins Only",
+                        "6:00 PM     Walk-ins and Appointments",
+                        "7:00 PM     Walk-ins Only"
+                        ],
+            "closure":[
+                            "Tuesday, 2 July 2019 - Monday, 15 July 2019",
+                            "Wednesday, 24 July 2019",
+                            "Saturday, 5 October 2019",
+                            "Wednesday, 27 November 2019 (Limited Hours)",
+                            "Thursday, 28 November 2019 - Friday, 29 November 2019",
+                            "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                            "Tuesday, 31 December 2019"
+                        ],
+            "additional":[
+                            {
+                                "title":"Family Ordinance Cards",
+                                "description":"Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple."
+                            }
+                        ],
+            "milestones":[
+                            {
+                                "date":"28 July 1847",
+                                "event":"Announced"
+                            },
+                            {
+                                "date":"14 February 1853",
+                                "event":"Groundbreaking"
+                            },
+                            {
+                                "date":"6 April 1893",
+                                "event":"Dedicated"
+                            }
+                        ]
+
+        },
+        {
+            "name":"Brigham City Utah Temple",
+            "address1":"250 S Main St",
+            "address2":"Brigham City UT 84302-2560",
+            "country":"United States",
+            "telephone":"(1) 435-695-2170",
+            "email":"brigh-off@ldschurch.org",
+            "services":[
+                            "No clothing rental available",
+                            "No cafeteria available",
+                            "No patron housing available",
+                            "Distribution center nearby"
+                        ],
+            "ordinance":[
+                            {
+                                "name":"Baptistry Schedule",
+                                "note":"For group appointments, please call the temple at: (1) 435-695-2170",
+                                "schedule":[
+                                            "5:15 AM - 8:30 AM      Walk-ins Only",
+                                            "8:30 AM - 8:00 PM      Walk-ins and Appointments"
+                                            ]
+                            },
+                            {
+                                "name":"Initiatory Schedule",
+                                "note":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 435-695-2170",
+                                "schedule":["For initiatory information and schedule, please call the temple."]
+                            },
+                            {
+                                "name":"Sealing Schedule",
+                                "note":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 435-695-2170",
+                                "schedule":["7:00 AM - 8:30 PM      Walk-ins and Appointments"]
+                            }
+            ],
+            "session":[
+                        "5:30 AM     Walk-ins and Appointments",
+                        "7:00 AM     Walk-ins and Appointments",
+                        "9:00 AM     Walk-ins and Appointments",
+                        "11:00 AM        Walk-ins and Appointments",
+                        "1:00 PM     Walk-ins and Appointments",
+                        "3:00 PM     Walk-ins and Appointments",
+                        "5:00 PM     Walk-ins and Appointments",
+                        "7:00 PM     Walk-ins and Appointments"
+                        ],
+            "closure":[
+                        "Thursday, 4 July 2019",
+                        "Wednesday, 24 July 2019",
+                        "Monday, 5 August 2019 - Monday, 19 August 2019",
+                        "Friday, 6 September 2019 (Limited Hours)",
+                        "Saturday, 7 September 2019",
+                        "Saturday, 5 October 2019",
+                        "Wednesday, 27 November 2019 (Limited Hours)",
+                        "Thursday, 28 November 2019",
+                        "Tuesday, 24 December 2019",
+                        "Wednesday, 25 December 2019",
+                        "Tuesday, 31 December 2019 (Limited Hours)"
+                        ],
+            "additional":[
+                            {
+                                "title":"Family Ordinance Cards",
+                                "description":"Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple."
+                            }
+                        ],
+            "milestones":[
+                            {
+                                "date":"3 October 2009",
+                                "event":"Announced"
+                            },
+                            {
+                                "date":"31 July 2010",
+                                "event":"Groundbreaking"
+                            },
+                            {
+                                "date":"23 September 2012",
+                                "event":"Dedicated"
+                            }
+                        ]
+        },
+        {
+            "name":"Washington D.C. Temple",
+            "address1":"9900 Stoneybrook Dr",
+            "address2":"Kensington MD 20895-3199",
+            "country":"United States",
+            "telephone":"(1) 301-588-0650",
+            "email":"washdc-off@ldschurch.org",
+            "services":[
+                        "Food vending machines available",
+                        "Clothing rental available",                        
+                        "Distribution center available",
+                        "No patron housing"
+                        ],
+            "ordinance":[
+                            {
+                                "name":"Baptistry Schedule",
+                                "note":"",
+                                "schedule":["Temple is closed."]
+                            },
+                            {
+                                "name":"Initiatory Schedule",
+                                "note":"",
+                                "schedule":["Temple is closed."]
+                            },
+                            {
+                                "name":"Sealing Schedule",
+                                "note":"",
+                                "schedule":["Temple is closed."]
+                            }
+            ],
+            "session":[
+                        "Temple is closed."
+                        ],
+            "closure":[
+                            "Temple closed during renovation."
+                        ],
+            "additional":[
+                            {
+                                "title":"Family Ordinance Cards",
+                                "description":"Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple."
+                            }
+                        ],
+            "milestones":[
+                            {
+                                "date":"15 November 1968",
+                                "event":"Announced"
+                            },
+                            {
+                                "date":"7 December 1968",
+                                "event":"Groundbreaking"
+                            },
+                            {
+                                "date":"19 November 1974",
+                                "event":"Dedicated"
+                            }
+                        ]
+        },
+        {
+            "name":"Portland Oregon Temple",
+            "address1":"13600 Kruse Oaks Blvd",
+            "address2":"Lake Oswego OR 97035-8602",
+            "country":"United States",
+            "telephone":"(1) 503-639-7066",
+            "email":"portl-off@ldschurch.org",
+            "services":[
+                        "Clothing rental available",
+                        "Cafeteria available",
+                        "No patron housing available",
+                        "Distribution center nearby"
+                        ],
+            "ordinance":[
+                            {
+                                "name":"Baptistry Schedule",
+                                "note":"For group appointments, please call the temple at: (1) 503-639-7066",
+                                "schedule":[
+                                            "7:00 AM - 5:00 PM       Walk-ins and Appointments",
+                                            "5:00 PM - 9:00 PM       Church Groups - Appointments Only"
+                                            ]
+                            },
+                            {
+                                "name":"Initiatory Schedule",
+                                "note":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 503-639-7066",
+                                "schedule":["7:00 AM - 9:00 PM      Walk-ins Only"]
+                            },
+                            {
+                                "name":"Sealing Schedule",
+                                "note":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 503-639-7066",
+                                "schedule":["7:00 AM - 9:00 PM      Walk-ins and Appointments"]
+                            }
+            ],
+            "session":[
+                        "7:00 AM        Walk-ins Only",
+                        "8:00 AM        Walk-ins Only",
+                        "9:00 AM        Walk-ins Only",
+                        "10:00 AM       Walk-ins Only"
+                        ],
+            "closure":[
+                        "Thursday, 4 July 2019",
+                        "Monday, 29 July 2019 - Monday, 12 August 2019",
+                        "Saturday, 5 October 2019",
+                        "Wednesday, 27 November 2019 (Limited Hours)",
+                        "Thursday, 28 November 2019",
+                        "Tuesday, 24 December 2019",
+                        "Wednesday, 25 December 2019"
+                        ],
+            "additional":[
+                            {
+                                "title":"Family Ordinance Cards",
+                                "description":"Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple."
+                            }
+                        ],
+            "milestones":[
+                            {
+                                "date":"7 April 1984",
+                                "event":"Announced"
+                            },
+                            {
+                                "date":"20 September 1986",
+                                "event":"Groundbreaking"
+                            },
+                            {
+                                "date":"19 August 1989",
+                                "event":"Dedicated"
+                            }
+                        ]
+        },
+        {
+            "name":"Cochabamba Bolivia Temple",
+            "address1":"Av. Melchor Urquidi 1500",
+            "address2":"Alto Queru Queru, Cochabamba. Casilla de Correo 1599",
+            "country":"Bolivia",
+            "telephone":"(591) 4-429-3161",
+            "email":"cbba-off@ldschurch.org",
+            "services":[
+                        "Clothing rental available",
+                        "Cafeteria available",
+                        "Patron housing available",
+                        "Distribution center nearby"
+                        ],
+            "ordinance":[
+                            {
+                                "name":"Baptistry Schedule",
+                                "note":"",
+                                "schedule":[
+                                            "No scheduled times available for the baptistry."
+                                            ]
+                            },
+                            {
+                                "name":"Initiatory Schedule",
+                                "note":"",
+                                "schedule":["Temple is closed."]
+                            },
+                            {
+                                "name":"Sealing Schedule",
+                                "note":"",
+                                "schedule":["Temple is closed."]
+                            }
+            ],
+            "session":[
+                        "Temple is closed."
+                        ],
+            "closure":[
+                        "Tuesday, 9 April 2019 - Monday, 20 May 2019",
+                        "Tuesday, 6 August 2019",
+                        "Saturday, 5 October 2019",
+                        "Monday, 7 October 2019 - Monday, 21 October 2019",
+                        "Tuesday, 24 December 2019",
+                        "Wednesday, 25 December 2019"
+                        ],
+            "additional":[
+                            {
+                                "title":"Family Ordinance Cards",
+                                "description":"Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple."
+                            }
+                        ],
+            "milestones":[
+                            {
+                                "date":"13 January 1995",
+                                "event":"Announced"
+                            },
+                            {
+                                "date":"10 November 1996",
+                                "event":"Groundbreaking"
+                            },
+                            {
+                                "date":"30 April 2000",
+                                "event":"Dedicated"
+                            }
+                        ]
+        }
     ]
 }

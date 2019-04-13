@@ -55,7 +55,44 @@
         </a> 
     </nav>
     <main>
+            <section class="banner">
+                    <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple Photo by https://www.ldstemple.pic">
+                    <div>
+                         <h2>Salt Lake Temple</h2>
+                    </div>                    
+                 </section> 
+        <section class="info-grid" id="salt-lake">
 
+        </section>
+        <section class="banner temple-weather">
+                <img src="images/salt-lake-temple-square.jpg" alt="temple square">
+                <div>
+                        <h2>Salt Lake Current Weather</h2>
+                        <table>
+                            <tr>
+                                <td>Currently:</td>
+                                <td><span id="condition"></span></td>
+                            </tr>
+                            <tr>
+                                <td>High:</td>
+                                <td><span id="temperature"></span>&#8457;</td>
+                            </tr>
+                            <tr>
+                                <td>Humidity:</td>
+                                <td><span id="humidity"></span>&percnt;</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Speed:</td>
+                                <td><span id="speed"></span>mph</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Direction:</td>
+                                <td><span id="wind"></span></td>
+                            </tr>
+                        </table>
+                </div>
+                
+        </section>
 
         <section class="contact-info">
             <div class="info">
@@ -82,6 +119,8 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/templeinfo.js"></script>
+    <script src="scripts/templeweather.js"></script>
     <script>
         window.onload = function() {
            currentDate();

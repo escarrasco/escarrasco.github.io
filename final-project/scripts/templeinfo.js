@@ -1,82 +1,183 @@
+//what temple is?
+var isSaltLake = document.getElementById("salt-lake");
+var isBrigham = document.getElementById("brigham");
+var isWashington = document.getElementById("washington");
+var isPortland = document.getElementById("portland");
+var isCochabamba = document.getElementById("cochabamba");
 
-var section = document.querySelector('.town-grid');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var templeName = '';
+
+if(isSaltLake != null){
+    templeName = 'Salt Lake Temple5780993';
+}
+if(isBrigham != null){
+    templeName = 'Brigham City Utah Temple';
+}
+if(isWashington != null){
+    templeName = 'Washington D.C. Temple'
+}
+if(isPortland != null){
+    templeName = 'Portland Oregon Temple'
+}
+if(isCochabamba != null){
+    templeName = 'Cochabamba Bolivia Temple'
+}
+
+var section = document.querySelector('.info-grid');
+var requestURL = 'temples.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-    var townsData = request.response;
-    showTowns(townsData);
+    var templeData = request.response;
+    showData(templeData);
 }
 
-function showTowns(jsonObj) {
-    var towns = jsonObj['towns'];
-    var preston = document.createElement('article');
-    var soda = document.createElement('article');
-    var fish = document.createElement('article');
-    for (var i = 0; i < towns.length; i++) {
-        if(towns[i].name == 'Preston' || towns[i].name == 'Soda Springs' || towns[i].name == 'Fish Haven'){
-            var name = document.createElement('h3');
-            var motto = document.createElement('h4');
-            var year = document.createElement('p');
-            var population = document.createElement('p');
-            var rainFall = document.createElement('p');
-            var  eventLabel = document.createElement('p');
-            var events = document.createElement('ul');
-            var picture = document.createElement('img');
-            picture.setAttribute('src', 'images/town' + i + '.jpg');
-            picture.setAttribute('alt', towns[i].name + ' picture');
+function showData(jsonObj) {
+    var temples = jsonObj['temples'];
+    console.log(temples);
+    var contact = document.createElement('article');
+    var ordinances = document.createElement('div');
+    var sessions = document.createElement('article');
+    var closure = document.createElement('article');
+    var additional = document.createElement('article');
+    var milestones = document.createElement('article');
 
-            name.textContent = towns[i].name;
-            motto.textContent = towns[i].motto;
-            year.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            population.textContent = 'Current Population: ' + towns[i].currentPopulation;
-            rainFall.textContent = 'Average Rain Fall: ' + towns[i].averageRainfall;
-            eventLabel.textContent = 'Events: ';
-            
-            var eventsObj = towns[i].events;
-            for (var j = 0; j < eventsObj.length; j++) {
+    for (var i = 0; i < temples.length; i++) {
+        if(temples[i].name == templeName){
+            var address = document.createElement('h4');
+            var lineadd1 = document.createElement('p');
+            var lineadd2 = document.createElement('p');
+            var lineadd3 = document.createElement('p');
+            var telephone = document.createElement('h4');
+            var tel = document.createElement('p');
+            var  email = document.createElement('h4');
+            var  e = document.createElement('p');
+            var  servH = document.createElement('h4');
+            var  servU = document.createElement('ul');
+
+            var  ordH = document.createElement('h3');
+            var  ordName = document.createElement('h4');
+            var ordNote = document.createElement('i');
+            var  ordSch = document.createElement('ul');
+
+
+            var  sessH = document.createElement('h3');
+            var  sessU = document.createElement('ul');
+            var  closH = document.createElement('h3');
+            var  closU = document.createElement('ul');
+            var  addH = document.createElement('h3');
+            var  addH4 = document.createElement('h4');
+            var  addP = document.createElement('p');
+            var  milH = document.createElement('h3');
+            var  mildate = document.createElement('p');
+            var  milevent = document.createElement('p');
+           
+            //temple contact information 
+            address.textContent = "Address";
+            lineadd1.textContent = temples[i].address1;
+            lineadd2.textContent = temples[i].address2;
+            lineadd3.textContent = temples[i].country;
+            telephone.textContent = "Telephone";
+            tel.textContent = temples[i].telephone;
+            email.textContent = 'eMail';
+            e.textContent = temples[i].email;
+            servH.textContent = "Services";
+            var servObj = temples[i].services;
+            for (var j = 0; j < servObj.length; j++) {
                 var listItem = document.createElement('li');
-                listItem.textContent = eventsObj[j];
-                events.appendChild(listItem);
+                listItem.textContent = servObj[j];
+                servU.appendChild(listItem);
             }
 
-            if(towns[i].name == 'Preston'){
-                preston.appendChild(name);
-                preston.appendChild(motto);
-                preston.appendChild(year);
-                preston.appendChild(population);
-                preston.appendChild(rainFall);
-                preston.appendChild(eventLabel);
-                preston.appendChild(events);
-                preston.appendChild(picture);  
+            contact.appendChild(address);
+            contact.appendChild(lineadd1);
+            contact.appendChild(lineadd2);
+            contact.appendChild(lineadd3);
+            contact.appendChild(telephone);
+            contact.appendChild(tel);
+            contact.appendChild(email);
+            contact.appendChild(e);
+            contact.appendChild(servH);
+            contact.appendChild(servU);
+
+            //ordinances
+            ordH.textContent = 'Ordinances Schedule';
+            
+            var ordObj = temples[i].ordinance;
+            for (var j = 0; j < ordObj.length; j++) {
+                var ordA = document.createElement('article');
+                ordName.textContent = ordObj[j].name;
+                ordNote.textContent = ordObj[j].note;
+                
+                var ordSsObj = ordObj[i].schedule;
+                for (var j = 0; j < ordSsObj.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = ordSsObj[j];
+                    ordSch.appendChild(listItem);
+                }
+
+
+                ordA.appendChild(ordName);
+                ordA.appendChild(ordNote);
+                ordA.appendChild(ordSch);
             }
-            if(towns[i].name == 'Soda Springs'){
-                soda.appendChild(name);
-                soda.appendChild(motto);
-                soda.appendChild(year);
-                soda.appendChild(population);
-                soda.appendChild(rainFall);
-                soda.appendChild(eventLabel);
-                soda.appendChild(events);
-                soda.appendChild(picture);  
+
+
+            //sessions
+            sessH.textContent = "Sessions Schedule";
+            var sessObj = temples[i].session;
+            for (var j = 0; j < sessObj.length; j++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = sessObj[j];
+                sessU.appendChild(listItem);
             }
-            if(towns[i].name == 'Fish Haven'){
-                fish.appendChild(name);
-                fish.appendChild(motto);
-                fish.appendChild(year);
-                fish.appendChild(population);
-                fish.appendChild(rainFall);
-                fish.appendChild(eventLabel);
-                fish.appendChild(events);
-                fish.appendChild(picture); 
-            }  
+
+            sessions.appendChild(sessH);
+            sessions.appendChild(sessU);
+
+            //closures
+            closH.textContent = "Temple Closures";
+            var closObj = temples[i].closure;
+            for (var j = 0; j < closObj.length; j++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = closObj[j];
+                closU.appendChild(listItem);
+            }
+
+            closure.appendChild(closH);
+            closure.appendChild(closU);
+            
+            //add
+            addH.textContent = 'Additional Information';
+            addH4.textContent = temples[i].additional[0].title;
+            addP.textContent = temples[i].additional[0].description;
+
+            additional.appendChild(addH);
+            additional.appendChild(addH4);
+            additional.appendChild(addP);
+
+            //milstone
+            milH.textContent = 'Milestones';
+            milestones.appendChild(milH);
+
+            var milObj = temples[i].milestones;
+            for (var j = 0; j < milObj.length; j++) {
+                mildate.textContent = milObj[j].date;
+                milevent.textContent = milObj[j].event;
+                milestones.appendChild(mildate);
+                milestones.appendChild(milevent);
+            }
+  
         }
 
     }
-    section.appendChild(preston);
-    section.appendChild(soda);
-    section.appendChild(fish);
+    section.appendChild(contact);
+    section.appendChild(ordinances);
+    section.appendChild(sessions);
+    section.appendChild(closure);
+    section.appendChild(additional);
+    section.appendChild(milestones);
 }

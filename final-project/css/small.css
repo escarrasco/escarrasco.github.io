@@ -424,7 +424,7 @@
     }
     
     .sub-menu{
-        /*display: none;*/
+        display: none;
         position: absolute;
         background-color: #f8f8f8;
         width: 100%;
@@ -507,4 +507,13 @@ svg#bigTriangleColor2 {
 	fill:white;
 	stroke:white;
 	stroke-width: 2;
+}
+
+.temple-weather div{
+    background-color: #4053589e;
+}
+.temple-weather table{
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: left;
 }
