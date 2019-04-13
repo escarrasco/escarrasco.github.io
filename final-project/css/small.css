@@ -525,3 +525,7 @@ svg#bigTriangleColor2 {
     row-gap: 20px;
     margin: 5% 5%;
 }
+.color-item{
+    background: #ADCCCB;
+    color: #f8f8f8;
+}

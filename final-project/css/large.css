@@ -165,17 +165,21 @@
     .suites-grid{
         grid-template-columns: 1fr 1fr;
     }
-    .arrow-left {
+    .arrow-right {
         width: 0; 
         height: 0; 
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent; 
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
         
-        border-right:10px solid #ADCCCB; 
+        border-left: 20px solid #ADCCCB;
       }
     .info-grid{
         grid-template-columns: 1fr 1fr;
         
+    }
+    .color-item{
+        background: #ADCCCB;
+        color: #f8f8f8;
     }
 }
 
