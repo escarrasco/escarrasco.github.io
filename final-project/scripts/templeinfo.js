@@ -52,7 +52,7 @@ function showData(jsonObj) {
     console.log(templeName);
 
     for (var i = 0; i < temples.length; i++) {
-        console.log('enter loop');
+       // console.log('enter loop');
         if(temples[i].name == templeName){
             var address = document.createElement('h4');
             var lineadd1 = document.createElement('p');

@@ -173,7 +173,10 @@
         
         border-right:10px solid #ADCCCB; 
       }
-      
+    .info-grid{
+        grid-template-columns: 1fr 1fr;
+        
+    }
 }
 
 
