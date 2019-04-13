@@ -176,11 +176,8 @@ function showData(jsonObj) {
             var milObj = temples[i].milestones;
             for (var j = 0; j < milObj.length; j++) {                
                 var  mildate = document.createElement('p');
-                var  milevent = document.createElement('p');
-                mildate.textContent = milObj[j].date;
-                milevent.textContent = milObj[j].event;
+                mildate.textContent = milObj[j].date + ' '+milObj[j].event;
                 milestones.appendChild(mildate);
-                milestones.appendChild(milevent);
             }
   
         }
