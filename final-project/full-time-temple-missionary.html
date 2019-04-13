@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Full-time Temple Missionary Services &verbar; Temple Inn & Suites</title>
+      <meta name="author" content="Esther Carrasco | CIT 230 BYU-Idaho">
+      <meta name="description" content="Temple Inn & Suites - A hotel chain that  manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+     
+  </head>
+  <body>
+    <header>
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+        </section>
+    </header>      
+    <nav>
+        
+        <ul id="menu">  
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li  class="hover-menu" ><a href="#" title="Temple" onclick="subMenu(0)">Temple &#9660;</a>
+                <div class="sub-menu">
+                        <p class="close-menu" onclick="subMenu(0)">&#9747;</p>
+                        <a href="temple.html">Temple Overview</a>
+                        <a href="salt-lake-temple.html">Salt Lake Temple</a>
+                        <a href="#">Brigham City Utah Temple</a>
+                        <a href="#">Washington D.C. Temple</a>
+                        <a href="#">Portland Oregon Temple</a>
+                        <a href="#">Cochabamba Bolivia Temple</a>
+                </div>
+            </li>
+            <li><a href="reservation.html" title="Reservation">Reservation</a></li>
+            <li id="menu-space"></li>
+            <li class="active hover-menu"><a href="#" title="Services" onclick="subMenu(1)">Services &#9660;</a>
+                <div class="sub-menu">
+                    <p class="close-menu" onclick="subMenu(1)">&#9747;</p>
+                    <a href="services.html">Services Overview</a>
+                    <a href="reception.html">Reception Services</a>
+                    <a href="full-time-temple-missionary.html">Temple Missionary Services</a>
+                </div>
+            </li>
+            <li><a href="contactus.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+        <a href="index.html" title="Home">
+                
+                <img id="large-logo" src="images/temple-in-suites-logo.png" alt="Temple Inn & Suites logo">
+                <img id="small-logo" src="images/temple-in-suites-logo-small.png" alt="Temple Inn & Suites logo">
+        </a> 
+    </nav>
+    <main>
+        <section class="banner">
+           <img src="images/missionary-banner.jpg" alt="missionary services Photo from Pexels">
+           <div>
+                <h2>Full-time Temple Missionary Services</h2>
+                <h3>Find a home near to the Temple</h3>
+           </div>
+           
+        </section>  
+        <section class="ss-style-triangles missionary-action">
+                    <p>In Temple Inn & Suites were happy to manage specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. </p>
+                    <p>Long-term stay accommodations in kitchenette suites for full-time temple missionaries is one of our best qualify service.</p>
+                    <p>Do you have question?</p>
+                    <a href="#contact">Send us a Message</a>
+            
+        </section>
+        <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+            <path d="M0 0 L50 100 L100 0 Z" />
+        </svg>
+        <section class="suites-grid temple-grid">
+                <div class="temple-icon">
+                    <img src="images/suite.jpg" alt="Suite Photo from Pexels">
+                    <h3>Executive Suite</h3>
+                    <p>A living room connected with to one or more bedrooms. (A room with one or more bedrooms and a separate living space.</p> 
+                    <p>The room size or area of Suite rooms are generally between 70 m² to 100 m².</p>               
+                </div>
+                <div class="temple-icon">
+                        <img src="images/small-suite.jpg" alt="Small Suite Photo from Pexels">
+                        <h3>Small Suite</h3>
+                        <p>A single room with a bed and sitting area. Sometimes the sleeping area is in a bedroom separate from the parlour or living room.</p> 
+                        <p>The room size or area of Small Suites are generally between 60 m² to 80 m².</p>               
+                </div>
+                <div class="temple-icon">
+                        <img src="images/penthouse.jpg" alt="petnhouse suite Photo by Milly Eaton from Pexels">
+                        <h3>Penthouse Suite</h3>
+                        <p>The most expensive room provided by a hotel. Usually, only one penthouse suite is available in one single hotel property. Similar to the normal suites, a penthouse suite always has one or more bedrooms and a living space with a strong emphasis on grand in-room decoration, high-quality amenities and supplies, and tailor-made services (e.g. personal butler during the stay).</p> 
+                        <p>The room size or area of Penthouse Suites are generally between 80 m² to 350 m².</p>               
+                </div>
+                <div class="temple-icon">
+                        <img src="images/apartment.jpg" alt="Apartment Photo from Pexels">
+                        <h3>Apartments</h3>
+                        <p>This room type can be found in service apartments and hotels which target for long stay guests. Open kitchens, cooking equipment, dryer, washer etc. are usually available in the room. Housekeeping services are only provided once in a week or two times in a week.</p> 
+                        <p>The room size or area of Serviced Apartments are generally between 96 m² to 250 m²</p>               
+                </div>
+        </section>
+        <svg id="bigTriangleColor2" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+            <path d="M0 0 L50 100 L100 0 Z" />
+        </svg>
+        <section class="booking-form contact-form" id="contact">
+               <div>
+                   <form method="GET" action="thanks-contactus.html" >
+                           <h1>Contact Us</h1>
+                           <p>Please send your message below. We will get back to you at the earliest!</p>   
+                               <input type="text" name="name" id="name" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required>            
+                               <input type="email" name="email" id="email" placeholder="Email example@mail.com" size="10" required>                                                 
+                               <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
+                           <input type="submit" value="Submit">
+                       </form>
+               </div>
+              
+        </section>
+        <section class="contact-info">
+            <div class="info">
+                <h3>Contact Information</h3>
+                    <p>Temple Inn & Suites headquartered</p>
+                    <p><img src="images/placeholder.png" alt="location icon"> 1020 Main Street Bethesda, MD</p>
+                    <p><img src="images/smartphone-call.png" alt="phone icon"> (999) 999 9999</p>
+                    <p><img src="images/envelope.png" alt="mail icon"> info@rainbowdetector.com</p>        
+                    <a href="#"><img src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="#"><img src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
+            </div>
+
+            <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=13&ie=UTF8&iwloc=&output=embed" title="map"></iframe>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2019 &verbar;  Temple Inn & Suites &verbar; Esther Carrasco  &verbar; Temple information retrived from <a href="https://ChurchofJesusChrist.org" target="_blank">ChurchofJesusChrist.org</a></p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script>
+        window.onload = function() {
+           currentDate();
+        }
+       </script> 
+  </body>
+</html>

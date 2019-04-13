@@ -1,0 +1,28 @@
+@media screen and (min-width: 481px) and
+    (max-width: 720px) {
+
+    .call-action h3{
+        top: 25%;
+    }
+
+    .contact-info{
+        grid-template-columns: 1fr 1fr;      
+    }
+    .info {
+        
+        text-align: left;
+    }
+    .temple-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .services-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .missionary-action a:hover{
+        background-color: #7A2626;
+        color: #f8f8f8;
+        width: 100%;
+        font-size: 20px;
+    }
+}

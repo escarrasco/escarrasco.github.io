@@ -1,0 +1,9 @@
+{
+    "temples":[
+        {"name":"Salt Lake Temple"},
+        {"name":"Brigham City Utah Temple"},
+        {"name":"Washington D.C. Temple"},
+        {"name":"Portland Oregon Temple"},
+        {"name":"Cochabamba Bolivia Temple"}
+    ]
+}

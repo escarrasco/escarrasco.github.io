@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Reception &verbar; Temple Inn & Suites</title>
+      <meta name="author" content="Esther Carrasco | CIT 230 BYU-Idaho">
+      <meta name="description" content="Temple Inn & Suites - A hotel chain that  manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+     
+  </head>
+  <body>
+    <header>
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+        </section>
+    </header>      
+    <nav>
+        
+        <ul id="menu">  
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li  class="hover-menu" ><a href="#" title="Temple" onclick="subMenu(0)">Temple &#9660;</a>
+                <div class="sub-menu">
+                        <p class="close-menu" onclick="subMenu(0)">&#9747;</p>
+                        <a href="temple.html">Temple Overview</a>
+                        <a href="salt-lake-temple.html">Salt Lake Temple</a>
+                        <a href="#">Brigham City Utah Temple</a>
+                        <a href="#">Washington D.C. Temple</a>
+                        <a href="#">Portland Oregon Temple</a>
+                        <a href="#">Cochabamba Bolivia Temple</a>
+                </div>
+            </li>
+            <li class="active"><a href="reservation.html" title="Reservation">Reservation</a></li>
+            <li id="menu-space"></li>
+            <li class="hover-menu"><a href="#" title="Services" onclick="subMenu(1)">Services &#9660;</a>
+                <div class="sub-menu">
+                    <p class="close-menu" onclick="subMenu(1)">&#9747;</p>
+                    <a href="services.html">Services Overview</a>
+                    <a href="reception.html">Reception Services</a>
+                    <a href="full-time-temple-missionary.html">Temple Missionary Services</a>
+                </div>
+            </li>
+            <li><a href="contactus.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+        <a href="index.html" title="Home">
+                
+                <img id="large-logo" src="images/temple-in-suites-logo.png" alt="Temple Inn & Suites logo">
+                <img id="small-logo" src="images/temple-in-suites-logo-small.png" alt="Temple Inn & Suites logo">
+        </a> 
+    </nav>
+    <main>
+        <section class="thanks">
+            <h2>Reservation</h2>
+            <p>Thanks! You successfully completed the reservation.</p>
+        </section>
+
+        <section class="contact-info">
+            <div class="info">
+                <h3>Contact Information</h3>
+                    <p>Temple Inn & Suites headquartered</p>
+                    <p><img src="images/placeholder.png" alt="location icon"> 1020 Main Street Bethesda, MD</p>
+                    <p><img src="images/smartphone-call.png" alt="phone icon"> (999) 999 9999</p>
+                    <p><img src="images/envelope.png" alt="mail icon"> info@rainbowdetector.com</p>        
+                    <a href="#"><img src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="#"><img src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
+            </div>
+
+            <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=13&ie=UTF8&iwloc=&output=embed" title="map"></iframe>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2019 &verbar;  Temple Inn & Suites &verbar; Esther Carrasco  &verbar; Temple information retrived from <a href="https://ChurchofJesusChrist.org" target="_blank">ChurchofJesusChrist.org</a></p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script>
+        window.onload = function() {
+           currentDate();
+        }
+       </script> 
+  </body>
+</html>
