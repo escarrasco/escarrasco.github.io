@@ -439,7 +439,11 @@
         display: none;
         color: #7A2626;
       }
-      .sub-menu a:hover{
+
+    .sub-menu a:link, a:visited{
+        color: #7A2626;
+      }
+    .sub-menu a:hover{
         background-color: #ADCCCB;
         color: #f8f8f8;
 
