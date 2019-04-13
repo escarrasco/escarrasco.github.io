@@ -190,17 +190,21 @@ function showData(jsonObj) {
     closure.classList.toggle("color-item");
     additional.classList.toggle("color-item");
     
-    var arrow = document.createElement('div');
-    arrow.classList.toggle("arrow-right");
+    var arrow1 = document.createElement('div');
+    var arrow2 = document.createElement('div');
+    var arrow3 = document.createElement('div');
+    arrow1.classList.toggle("arrow-right");
+    arrow2.classList.toggle("arrow-right");
+    arrow3.classList.toggle("arrow-right");
     
     
     section.appendChild(contact);
-    section.appendChild(arrow);
+    section.appendChild(arrow1);
     section.appendChild(ordinances);
     section.appendChild(sessions);
-    section.appendChild(arrow);
+    section.appendChild(arrow2);
     section.appendChild(closure);
     section.appendChild(additional);
-    section.appendChild(arrow);
+    section.appendChild(arrow3);
     section.appendChild(milestones);
 }
