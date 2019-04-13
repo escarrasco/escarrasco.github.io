@@ -189,11 +189,18 @@ function showData(jsonObj) {
     contact.classList.toggle("color-item");
     closure.classList.toggle("color-item");
     additional.classList.toggle("color-item");
-	
+    
+    var arrow = document.createElement('div');
+    arrow.classList.toggle("arrow-right");
+    
+    
     section.appendChild(contact);
+    section.appendChild(arrow);
     section.appendChild(ordinances);
     section.appendChild(sessions);
+    section.appendChild(arrow);
     section.appendChild(closure);
     section.appendChild(additional);
+    section.appendChild(arrow);
     section.appendChild(milestones);
 }
