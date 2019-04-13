@@ -511,6 +511,10 @@ svg#bigTriangleColor2 {
 
 .temple-weather div{
     background-color: #4053589e;
+    top: 0;
+}
+.temple-weather img{
+    margin-bottom: 45%;
 }
 .temple-weather table{
     margin: 0 auto;

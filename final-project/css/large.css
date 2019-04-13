@@ -184,7 +184,13 @@
         column-gap: 0px;
         
     }
-
+    .temple-weather div{
+        background-color: #4053589e;
+        top: 30%;
+    }
+    .temple-weather img{
+        margin-bottom: 5%;
+    }
 }
 
 
