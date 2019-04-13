@@ -534,3 +534,7 @@ svg#bigTriangleColor2 {
 .info-grid article, .info-grid div{
     padding: 3% 10%;
 }
+.arrow-right,.arrow-left {
+    display: none;
+  }
+ 

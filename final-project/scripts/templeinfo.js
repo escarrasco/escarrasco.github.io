@@ -194,7 +194,7 @@ function showData(jsonObj) {
     var arrow2 = document.createElement('div');
     var arrow3 = document.createElement('div');
     arrow1.classList.toggle("arrow-right");
-    arrow2.classList.toggle("arrow-right");
+    arrow2.classList.toggle("arrow-left");
     arrow3.classList.toggle("arrow-right");
     
     
